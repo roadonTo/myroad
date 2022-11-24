@@ -1,0 +1,44 @@
+18-Feb-2022 12:17:15.092 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/8.5.75
+18-Feb-2022 12:17:15.101 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Jan 17 2022 22:07:47 UTC
+18-Feb-2022 12:17:15.101 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      8.5.75.0
+18-Feb-2022 12:17:15.103 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+18-Feb-2022 12:17:15.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+18-Feb-2022 12:17:15.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+18-Feb-2022 12:17:15.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\develop\jdk1.8.0\jre
+18-Feb-2022 12:17:15.104 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_152-b16
+18-Feb-2022 12:17:15.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+18-Feb-2022 12:17:15.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\develop\apache-tomcat-8.5.75
+18-Feb-2022 12:17:15.105 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\develop\apache-tomcat-8.5.75
+18-Feb-2022 12:17:15.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\develop\apache-tomcat-8.5.75\conf\logging.properties
+18-Feb-2022 12:17:15.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Feb-2022 12:17:15.106 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+18-Feb-2022 12:17:15.107 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Feb-2022 12:17:15.107 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+18-Feb-2022 12:17:15.108 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\develop\apache-tomcat-8.5.75
+18-Feb-2022 12:17:15.109 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\develop\apache-tomcat-8.5.75
+18-Feb-2022 12:17:15.110 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\develop\apache-tomcat-8.5.75\temp
+18-Feb-2022 12:17:15.110 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+18-Feb-2022 12:17:15.112 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]。
+18-Feb-2022 12:17:15.114 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+18-Feb-2022 12:17:15.130 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+18-Feb-2022 12:17:15.327 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+18-Feb-2022 12:17:15.640 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Feb-2022 12:17:15.663 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1341 ms
+18-Feb-2022 12:17:15.725 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+18-Feb-2022 12:17:15.725 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/8.5.75]
+18-Feb-2022 12:17:15.746 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\develop\apache-tomcat-8.5.75\webapps\docs]
+18-Feb-2022 12:17:16.273 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\develop\apache-tomcat-8.5.75\webapps\docs]的部署已在[521]毫秒内完成
+18-Feb-2022 12:17:16.277 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\develop\apache-tomcat-8.5.75\webapps\examples]
+18-Feb-2022 12:17:16.832 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\develop\apache-tomcat-8.5.75\webapps\examples]的部署已在[555]毫秒内完成
+18-Feb-2022 12:17:16.836 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\develop\apache-tomcat-8.5.75\webapps\host-manager]
+18-Feb-2022 12:17:16.887 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\develop\apache-tomcat-8.5.75\webapps\host-manager]的部署已在[51]毫秒内完成
+18-Feb-2022 12:17:16.892 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\develop\apache-tomcat-8.5.75\webapps\manager]
+18-Feb-2022 12:17:16.934 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\develop\apache-tomcat-8.5.75\webapps\manager]的部署已在[42]毫秒内完成
+18-Feb-2022 12:17:16.939 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\develop\apache-tomcat-8.5.75\webapps\ROOT]
+18-Feb-2022 12:17:16.972 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\develop\apache-tomcat-8.5.75\webapps\ROOT]的部署已在[33]毫秒内完成
+18-Feb-2022 12:17:16.980 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+18-Feb-2022 12:17:17.006 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 1343 ms
+18-Feb-2022 12:20:58.557 信息 [Thread-4] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+18-Feb-2022 12:20:58.644 信息 [Thread-4] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+18-Feb-2022 12:20:58.667 信息 [Thread-4] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+18-Feb-2022 12:20:58.670 信息 [Thread-4] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]

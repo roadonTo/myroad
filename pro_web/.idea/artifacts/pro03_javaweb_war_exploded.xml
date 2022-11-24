@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pro03_javaweb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/pro03_javaweb_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="pro03_javaweb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pro03_javaweb" />
+          <element id="library" level="application" name="apache-tomcat-8.5.75" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
