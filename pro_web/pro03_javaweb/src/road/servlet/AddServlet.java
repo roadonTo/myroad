@@ -15,6 +15,7 @@ public class AddServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         String fname = req.getParameter("fname");
         int price = Integer.parseInt(req.getParameter("price"));
         int acount = Integer.parseInt(req.getParameter("acount"));

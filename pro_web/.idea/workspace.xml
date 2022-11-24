@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3bf37ab-f685-4beb-9026-58c9a7738c80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro02_jdbc/src/com/road/dao/base/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pro02_jdbc/src/com/road/dao/base/BaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro03_javaweb/src/road/servlet/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/pro03_javaweb/src/road/servlet/AddServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pro03_javaweb/src" />
+    <property name="last_opened_file_path" value="E:/BaiduNetdiskDownload/development_related/4.尚硅谷JavaWeb2022版全新教程/代码素材资料/Day4-servlet-http-session/代码/pro08-javaweb-servlet" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -274,6 +272,7 @@
       <workItem from="1669182040228" duration="7951000" />
       <workItem from="1669246944697" duration="2316000" />
       <workItem from="1669249639946" duration="4462000" />
+      <workItem from="1669282426858" duration="2989000" />
     </task>
     <servers />
   </component>
@@ -309,10 +308,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="895" y="358" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1669281056548" />
-    <state x="936" y="364" key="FileChooserDialogImpl" timestamp="1669279557992">
+    <state x="936" y="364" key="FileChooserDialogImpl" timestamp="1669299001577">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="936" y="364" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1669279557992" />
+    <state x="936" y="364" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1669299001577" />
     <state width="1570" height="221" key="GridCell.Tab.0.bottom" timestamp="1669281431059">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
