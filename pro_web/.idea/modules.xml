@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pro01_jdbc/pro01_jdbc.iml" filepath="$PROJECT_DIR$/pro01_jdbc/pro01_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro02_jdbc/pro02_jdbc.iml" filepath="$PROJECT_DIR$/pro02_jdbc/pro02_jdbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pro03_javaweb/pro03_javaweb.iml" filepath="$PROJECT_DIR$/pro03_javaweb/pro03_javaweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro03_javaweb_servlet/pro03_javaweb_servlet.iml" filepath="$PROJECT_DIR$/pro03_javaweb_servlet/pro03_javaweb_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro04_javaweb_thymeleaf/pro04_javaweb_thymeleaf.iml" filepath="$PROJECT_DIR$/pro04_javaweb_thymeleaf/pro04_javaweb_thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro05_javaweb_thymeleaf/pro05_javaweb_thymeleaf.iml" filepath="$PROJECT_DIR$/pro05_javaweb_thymeleaf/pro05_javaweb_thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro_web.iml" filepath="$PROJECT_DIR$/pro_web.iml" />
     </modules>
   </component>
