@@ -1,17 +1,18 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="pro06_filter_listener:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/pro06_filter_listener_war_exploded</output-path>
+  <artifact type="exploded-war" name="pro08_book:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/pro08_book_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="pro06_filter_listener" />
+          <element id="module-output" name="pro08_book" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib_thymeleaf" />
           <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="lib_myssm" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="pro06_filter_listener/web/Web" />
+      <element id="javaee-facet-resources" facet="pro08_book/web/Web" />
     </root>
   </artifact>
 </component>
