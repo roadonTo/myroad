@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="road.mapper.UserMapper">
+
+    <!--int insertUser() -->
+    <insert id="insertUser">
+        insert into USER values(null,"sakura","123",19,'1',"@123qq.com");
+    </insert>
+
+    <!--User getUserById(int id) -->
+    <select id="getUserById" resultType="road.pojo.User">
+        select * from USER where id = 1;
+    </select>
+
+    <!--List<User> getAllUser() -->
+    <select id="getAllUser" resultType="road.pojo.User">
+        select * from USER;
+    </select>
+
+
+</mapper>
