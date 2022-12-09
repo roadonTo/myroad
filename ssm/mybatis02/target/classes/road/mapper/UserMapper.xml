@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="road.mapper.UserMapper">
+
+    <!-- User getByName(String name)-->
+    <select id="getByName" resultType="user">
+        select * from user where username = #{name};
+    </select>
+
+    <!--User getUser1(String name, String pwd)-->
+    <select id="getUser1" resultType="user">
+        select * from user where username = #{param1} and password = #{param2};
+    </select>
+
+    <!-- User getUser2(@Param("name") String name, @Param("pwd") String pwd)-->
+    <select id="getUser2" resultType="user">
+        select * from user where username = #{name} and password = #{pwd};
+    </select>
+
+    <!--int insertUser(User user)-->
+    <insert id="insertUser" parameterType="user">
+        insert into user values(null, #{username}, #{password}, #{age}, #{gender}, #{email});
+    </insert>
+
+
+    <!--List<User> getAllUser() -->
+    <select id="getAllUser" resultType="user">
+        select * from user;
+    </select>
+
+    <!--String getOneName(@Param("name") String name)-->
+    <select id="getOneName" resultType="string">
+        select email from user where username = #{name};
+    </select>
+
+    <!--Map<String, Object> getUserColumns(@Param("id") Integer id)-->
+    <select id="getUserColumns" resultType="map">
+        select username, age from user where id = #{id};
+    </select>
+
+    <!--List<Map<String, Object>> getSomeUsersColumns()-->
+    <select id="getSomeUsersColumns" resultType="map">
+        select username, age, gender from user;
+    </select>
+
+    <!--Map<String, Object> getUserLike(@Param("mohu") String mohu)-->
+    <select id="getUserLike" resultType="map">
+        select username, password, age from user where username like "%"#{mohu}"%";
+    </select>
+
+    <!--int deleteUserById(@Param("ids")String ids)-->
+    <delete id="deleteUserById" parameterType="string">
+        delete from user where id in (${ids});
+    </delete>
+
+    <!--void insertOneUser()   这个是获取自增的主键，它能把自增的id放回到传入的user的id中去，以便你使用-->
+    <insert id="insertOneUser" useGeneratedKeys="true" keyProperty="id">
+        insert into user values (null, #{username}, #{password}, #{age}, #{gender}, #{email});
+    </insert>
+
+
+</mapper>

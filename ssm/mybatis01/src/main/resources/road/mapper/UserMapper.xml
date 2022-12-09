@@ -8,12 +8,12 @@
     </insert>
 
     <!--User getUserById(int id) -->
-    <select id="getUserById" resultType="road.pojo.User">
+    <select id="getUserById" resultType="User">
         select * from USER where id = 1;
     </select>
 
     <!--List<User> getAllUser() -->
-    <select id="getAllUser" resultType="road.pojo.User">
+    <select id="getAllUser" resultType="User">
         select * from USER;
     </select>
 
