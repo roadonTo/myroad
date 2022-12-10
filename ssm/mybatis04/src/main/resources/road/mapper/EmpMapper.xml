@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="road.mapper.EmpMapper">
+
+    <!--这个是 if标签的使用-->
+<!--    List<Emp> getEmps(@Param("empId") Integer empId, @Param("empName") String empName, @Param("age") Integer age);-->
+<!--    <select id="getEmps" resultType="emp">-->
+<!--        select * from t_emp where 1=1-->
+<!--        <if test="empId != null and empId != '' ">-->
+<!--            and emp_id = #{empId}-->
+<!--        </if>-->
+<!--        <if test="empName != null and empName != ''">-->
+<!--            and emp_name = #{empName}-->
+<!--        </if>-->
+<!--        <if test="age != null and age != ''">-->
+<!--            and age = #{age}-->
+<!--        </if>-->
+<!--    </select>-->
+
+    <!--这个是where标签的使用   where标签能自动补上where，能去掉语句前面多余的and，能检测当没有条件成立时 不加where-->
+    <!--如果把where标签换成trim标签的话，它有四个属性，prefix 加上什么前缀， prefixOverrides 去除前面，还有两个针对后面的操作-->
+    <select id="getEmps" resultType="emp">
+        select * from t_emp
+        <where>
+            <if test="empId != null and empId != '' ">
+                and emp_id = #{empId}
+            </if>
+            <if test="empName != null and empName != ''">
+                and emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <!--测试choose, when, otherwise 标签的使用-->
+    <!--    List<Emp> getEmps2(@Param("empId") Integer empId, @Param("empName") String empName, @Param("age") Integer age);-->
+    <select id="getEmps2" resultType="Emp">
+        select * from t_emp where
+        <choose>
+            <when test="empId != null and empId != ''">
+                emp_id = #{empId}
+            </when>
+            <when test="empName != null and empName != ''">
+                emp_name = #{empName}
+            </when>
+            <when test="age != null and age != ''">
+                age = #{age}
+            </when>
+            <otherwise>
+                1=1
+            </otherwise>
+        </choose>
+
+    </select>
+
+    <!--测试foreach标签的使用-->
+    <!--void insertEmps(@Param("emps") List<Emp> emps);-->
+    <insert id="insertEmps">
+        insert into t_emp values
+        <foreach collection="emps"  item="emp" separator=",">
+           (null, #{emp.empName}, #{emp.age}, #{emp.gender}, null )
+        </foreach>
+
+    </insert>
+
+
+    <!--测试sql标签的使用-->
+    <sql id="sqlEmp">
+        emp_id, emp_name, age, gender
+    </sql>
+    <select id="getOneEmp" resultType="emp">
+        select <include refid="sqlEmp"></include> from t_emp where emp_id = #{empId};
+    </select>
+
+
+
+</mapper>

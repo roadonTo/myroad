@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="road.mapper.EmpMapper">
+
+    <!--Emp getEmpById(@Param("empId") Integer empId)-->
+    <!--在核心配置文件中配置settings方式 设置mapUnderscoreToCamelCase 为true-->
+    <select id="getEmpById1" resultType="emp">
+        select * from t_emp where emp_id = #{empId};
+    </select>
+
+    <resultMap id="getEmp" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+
+    </resultMap>
+
+    <select id="getEmpById2" resultMap="getEmp">
+        select * from t_emp where emp_id = #{empId};
+    </select>
+
+    <!-- *************************************************************** -->
+
+    <!--多对一，级联查询-->
+    <resultMap id="getEmpJiLian" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="dept_id" property="dept.deptId"></result>
+        <result column="dept_name" property="dept.deptName"></result>
+    </resultMap>
+
+    <select id="getEmpById3" resultMap="getEmpJiLian">
+        select * from t_emp left join t_dept on t_emp.dept_id = t_dept.dept_id where emp_id = #{empId} ;
+    </select>
+
+    <!--多对一，使用association标签-->
+    <resultMap id="getEmpBiaoQian" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <association property="dept" javaType="Dept">
+            <result column="dept_id" property="deptId"></result>
+            <result column="dept_name" property="deptName"></result>
+        </association>
+    </resultMap>
+
+    <select id="getEmpById4" resultMap="getEmpBiaoQian">
+        select * from t_emp left join t_dept on t_emp.dept_id = t_dept.dept_id where emp_id = #{empId} ;
+    </select>
+
+    <!--多对一，分步查询-->
+    <resultMap id="getEmpByStep" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <association property="dept" select="road.mapper.DeptMapper.getDeptByStepTwo"
+                     column="dept_id"></association>
+    </resultMap>
+
+
+    <select id="getDeptByStepOne" resultMap="getEmpByStep">
+        select * from t_emp where emp_id = #{empId};
+    </select>
+
+
+<!--    <resultMap id="getEmpByStepxxx" type="Emp">-->
+<!--        <id column="emp_id" property="empId"></id>-->
+<!--        <result column="emp_name" property="empName"></result>-->
+<!--        <result column="age" property="age"></result>-->
+<!--        <result column="gender" property="gender"></result>-->
+<!--        设置 fetchType = "eager" 立即加载 -->
+<!--       <association property="dept" select="road.mapper.DeptMapper.getDeptByStepTwo" fetchType="eager"-->
+<!--                     column="dept_id"></association>-->
+<!--    </resultMap>-->
+<!--    -->
+<!--    <select id="getDeptByStepOnexxx" resultMap="getEmpByStepxxx">-->
+<!--        select emp_name from t_emp where emp_id = #{empId};-->
+<!--    </select>-->
+
+
+
+
+
+
+
+
+</mapper>
