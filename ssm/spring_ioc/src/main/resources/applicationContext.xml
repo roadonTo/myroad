@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="hello" class="road.pojo.HelloWorld"></bean>
+
+    <bean id="student" class="road.pojo.Student"></bean>
+
+
+    <!--setter注入-->
+    <bean id="student1" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age" value="21"></property>
+        <property name="gender" value="男"></property>
+    </bean>
+
+    <!--构造器注入-->
+    <bean id="student2" class="road.pojo.Student">
+        <constructor-arg name="id" value="200"></constructor-arg>
+        <constructor-arg name="name" value="sakura"></constructor-arg>
+        <constructor-arg name="age" value="20"></constructor-arg>
+        <constructor-arg name="gender" value="男"></constructor-arg>
+    </bean>
+
+    <!--特殊值 —— null值注入-->
+    <bean id="student3" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age">
+            <null></null>
+        </property>
+        <property name="gender">
+            <null></null>
+        </property>
+    </bean>
+
+
+    <!--类 类型注入-->
+    <bean id="aclass" class="road.pojo.Class">
+        <property name="classId" value="10086"></property>
+        <property name="className" value="炎之龙斩者"></property>
+    </bean>
+    <bean id="student4" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age" value="21"></property>
+        <property name="gender" value="男"></property>
+        <property name="aClass" ref="aclass"></property>
+    </bean>
+
+
+    <!--数组注入-->
+    <bean id="student5" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age" value="21"></property>
+        <property name="gender" value="男"></property>
+        <property name="hobby">
+            <array>
+                <value>篮球</value>
+                <value>足球</value>
+                <value>乒乓球</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--list集合 注入-->
+    <bean id="student6" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age" value="21"></property>
+        <property name="gender" value="男"></property>
+        <property name="students">
+            <list>
+                <ref bean="student1"></ref>
+                <ref bean="student2"></ref>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--map 注入-->
+    <bean id="student7" class="road.pojo.Student">
+        <property name="id" value="100"></property>
+        <property name="name" value="kangkang"></property>
+        <property name="age" value="21"></property>
+        <property name="gender" value="男"></property>
+        <property name="studentMap" >
+            <map>
+                <entry key="aaa" value-ref="student1"></entry>
+                <entry key="bbb" value-ref="student3"></entry>
+                <entry key="ccc" value-ref="student4"></entry>
+            </map>
+        </property>
+    </bean>
+
+    <!--p命令空间注入-->
+    <bean id="student8" class="road.pojo.Student" p:id="1001" p:age="18" p:gender="女">
+
+    </bean>
+
+
+    <!--***********************************************************************************************************-->
+    <!--bean的作用域 ：  scope=prototype 多例， 默认是scope=singleton  -->
+    <bean id="user" class="road.pojo.User" scope="prototype"></bean>
+
+
+    <!--bean的生命周期： 实例化，依赖注入，初始化，销毁-->
+    <bean id="user1" class="road.pojo.User" init-method="initMethod" destroy-method="destoryMethod">
+        <property name="id" value="1001"></property>
+        <property name="username" value="凯撒"></property>
+    </bean>
+
+    <!--FactoryBean 的使用-->
+    <bean id="factoryBean" class="road.pojo.service.impl.FactoryBeanImpl"></bean>
+
+
+
+
+
+
+
+</beans>
