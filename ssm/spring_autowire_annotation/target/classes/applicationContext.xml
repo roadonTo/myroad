@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--常用的是这种（表示 扫描哪个包下面的文件，里面列出 不包含的文件 ）
+    base-package：表示扫描哪个包
+    use-default-filters：默认为true，表示使用默认的规则 即扫描配置的这个 base-package
+    exclude-filter：表示不包含        include-filter：表示包含
+    type="annotation" ：表示扫描注解   type="assignable"：表示扫描具体类
+
+    -->
+    <context:component-scan base-package="road">
+<!--        <context:exclude-filter type="assignable" expression="road.pojo.User"/>-->
+    </context:component-scan>
+
+
+
+<!--    <context:component-scan base-package="road" use-default-filters="false">-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--        <context:include-filter type="assignable" expression="road.controller.UserController"/>-->
+<!--    </context:component-scan>-->
+
+
+</beans>
