@@ -14,6 +14,7 @@
         <module name="mybatis01" />
         <module name="spring_autowire_xml" />
         <module name="spring_autowire_annotation" />
+        <module name="spring_aop" />
         <module name="spring_ioc" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="mybatis04" target="8" />
       <module name="mybatis05" target="8" />
       <module name="mybatis06" target="8" />
+      <module name="spring_aop" target="1.5" />
       <module name="spring_autowire_annotation" target="1.5" />
       <module name="spring_autowire_xml" target="1.5" />
       <module name="spring_ioc" target="1.5" />
