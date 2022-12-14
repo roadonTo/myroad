@@ -16,6 +16,8 @@
         <module name="spring_autowire_annotation" />
         <module name="spring_aop" />
         <module name="spring_ioc" />
+        <module name="spring_annotation" />
+        <module name="springmvc_hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,10 +27,12 @@
       <module name="mybatis04" target="8" />
       <module name="mybatis05" target="8" />
       <module name="mybatis06" target="8" />
+      <module name="spring_annotation" target="8" />
       <module name="spring_aop" target="1.5" />
       <module name="spring_autowire_annotation" target="1.5" />
       <module name="spring_autowire_xml" target="1.5" />
       <module name="spring_ioc" target="1.5" />
+      <module name="springmvc_hello" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
