@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc_demo" />
         <module name="mybatis06" />
         <module name="mybatis05" />
         <module name="mybatis04" />
@@ -32,6 +33,7 @@
       <module name="spring_autowire_annotation" target="1.5" />
       <module name="spring_autowire_xml" target="1.5" />
       <module name="spring_ioc" target="1.5" />
+      <module name="springmvc_demo" target="1.5" />
       <module name="springmvc_hello" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -9,6 +9,12 @@
     </properties>
     <root id="archive" name="springmvc_hello-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="springmvc_hello:war exploded" />
+      <element id="javaee-facet-resources" facet="springmvc_demo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springmvc_demo" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
