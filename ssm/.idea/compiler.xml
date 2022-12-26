@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_autowire_annotation" />
         <module name="springmvc_demo" />
+        <module name="springmvc_file_upAndDown" />
+        <module name="springmvc_rest" />
+        <module name="springmvc_hello" />
+        <module name="spring_ioc" />
+        <module name="spring_annotation" />
         <module name="mybatis06" />
         <module name="mybatis05" />
         <module name="mybatis04" />
         <module name="mybatis03" />
         <module name="mybatis02" />
         <module name="mybatis01" />
-        <module name="spring_autowire_xml" />
-        <module name="spring_autowire_annotation" />
         <module name="spring_aop" />
-        <module name="spring_ioc" />
-        <module name="spring_annotation" />
-        <module name="springmvc_hello" />
+        <module name="spring_autowire_xml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,7 +36,9 @@
       <module name="spring_autowire_xml" target="1.5" />
       <module name="spring_ioc" target="1.5" />
       <module name="springmvc_demo" target="1.5" />
+      <module name="springmvc_file_upAndDown" target="1.5" />
       <module name="springmvc_hello" target="1.5" />
+      <module name="springmvc_rest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
