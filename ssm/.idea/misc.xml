@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_annotation" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_demo" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_file_upAndDown" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_hello" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_rest" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm整合" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -24,6 +26,9 @@
         <option value="$PROJECT_DIR$/springmvc_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_rest/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_file_upAndDown/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_extension/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm整合/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_annotation/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,11 +13,13 @@
       <module fileurl="file://$PROJECT_DIR$/spring_autowire_annotation/spring_autowire_annotation.iml" filepath="$PROJECT_DIR$/spring_autowire_annotation/spring_autowire_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_autowire_xml/spring_autowire_xml.iml" filepath="$PROJECT_DIR$/spring_autowire_xml/spring_autowire_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc/spring_ioc.iml" filepath="$PROJECT_DIR$/spring_ioc/spring_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc_annotation/springmvc_annotation.iml" filepath="$PROJECT_DIR$/springmvc_annotation/springmvc_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_demo/springmvc_demo.iml" filepath="$PROJECT_DIR$/springmvc_demo/springmvc_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_file_upAndDown/springmvc_file_upAndDown.iml" filepath="$PROJECT_DIR$/springmvc_file_upAndDown/springmvc_file_upAndDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_hello/springmvc_hello.iml" filepath="$PROJECT_DIR$/springmvc_hello/springmvc_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc_rest/springmvc_rest.iml" filepath="$PROJECT_DIR$/springmvc_rest/springmvc_rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm.iml" filepath="$PROJECT_DIR$/ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm整合/ssm整合.iml" filepath="$PROJECT_DIR$/ssm整合/ssm整合.iml" />
     </modules>
   </component>
 </project>

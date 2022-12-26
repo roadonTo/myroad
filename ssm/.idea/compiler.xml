@@ -11,8 +11,10 @@
         <module name="springmvc_file_upAndDown" />
         <module name="springmvc_rest" />
         <module name="springmvc_hello" />
+        <module name="springmvc_annotation" />
         <module name="spring_ioc" />
         <module name="spring_annotation" />
+        <module name="SSM" />
         <module name="mybatis06" />
         <module name="mybatis05" />
         <module name="mybatis04" />
@@ -21,6 +23,7 @@
         <module name="mybatis01" />
         <module name="spring_aop" />
         <module name="spring_autowire_xml" />
+        <module name="ssm整合" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,10 +38,13 @@
       <module name="spring_autowire_annotation" target="1.5" />
       <module name="spring_autowire_xml" target="1.5" />
       <module name="spring_ioc" target="1.5" />
+      <module name="springmvc_annotation" target="1.5" />
       <module name="springmvc_demo" target="1.5" />
       <module name="springmvc_file_upAndDown" target="1.5" />
       <module name="springmvc_hello" target="1.5" />
       <module name="springmvc_rest" target="1.5" />
+      <module name="SSM" target="1.5" />
+      <module name="ssm整合" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
