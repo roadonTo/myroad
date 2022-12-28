@@ -17,16 +17,16 @@
         </jdbcConnection>
         <!-- javaBean的生成策略-->
         <javaModelGenerator targetPackage="road.pojo" targetProject=".\src\main\java">
-            <property name="enableSubPackages" value="true" />
-            <property name="trimStrings" value="true" />
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- SQL映射文件的生成策略 -->
-        <sqlMapGenerator targetPackage="road.mapper"  targetProject=".\src\main\resources">
-            <property name="enableSubPackages" value="true" />
+        <sqlMapGenerator targetPackage="road.mapper" targetProject=".\src\main\resources">
+            <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- Mapper接口的生成策略 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="road.mapper"  targetProject=".\src\main\java">
-            <property name="enableSubPackages" value="true" />
+        <javaClientGenerator type="XMLMAPPER" targetPackage="road.mapper" targetProject=".\src\main\java">
+            <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 逆向分析的表 -->
         <!-- tableName设置为*号，可以对应所有表，此时不写domainObjectName -->

@@ -32,7 +32,7 @@ public class IntegerDemo {
         //装箱：把基本数据类型转换为对应的包装类类型
         Integer i = Integer.valueOf(100); //这种是手动的装箱
         Integer ii = 100; //自动装箱 ，相当于 Integer.valueOf(100);
-        ii+=200;  //ii = ii + 200;  ii + 200 自动拆箱；ii = ii + 200; 是自动装箱
+        ii += 200;  //ii = ii + 200;  ii + 200 自动拆箱；ii = ii + 200; 是自动装箱
 
         System.out.println(i + "," + ii);
     }

@@ -11,7 +11,7 @@ public class StreamAPITest {
 
     //创建Stream方式一：通过集合
     @Test
-    public void test1(){
+    public void test1() {
 
         //因为是通过集合的，所以首先需要一个集合对象
         ArrayList<String> list = new ArrayList<>();
@@ -25,8 +25,8 @@ public class StreamAPITest {
 
     //创建Stream方式二：通过数组
     @Test
-    public void test2(){
-        int[] arr = new int[]{1,3,5,2,56,13};
+    public void test2() {
+        int[] arr = new int[]{1, 3, 5, 2, 56, 13};
         //调用Arrays类的static <T> Stream<T> stream(T[] array) ;  返回一个流
         IntStream stream = Arrays.stream(arr);
 
@@ -35,12 +35,10 @@ public class StreamAPITest {
 
     //方式三：通过Stream的of()
     @Test
-    public void test3(){
+    public void test3() {
         Stream<Integer> stream = Stream.of(1, 2, 4, 5, 6);
 
     }
-
-
 
 
 }

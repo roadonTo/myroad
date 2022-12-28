@@ -13,7 +13,7 @@ public class StreamAPITest1 {
 
     //1. 筛选与切片
     @Test
-    public void test1(){
+    public void test1() {
         List<Employee> list = EmployeeData.getEmployees();
         Stream<Employee> stream = list.stream();
         //filter(Predicate p)——接收Lambda，从流中选出某些元素
@@ -36,9 +36,9 @@ public class StreamAPITest1 {
 
     //2.映射
     @Test
-    public void test2(){
+    public void test2() {
         //map(Function f)——接收一个函数作为参数，将元素转换成其他形式或提取信息
-        List<String> list = Arrays.asList("aa","bb","cc","dd");
+        List<String> list = Arrays.asList("aa", "bb", "cc", "dd");
         list.stream().map(str -> str.toUpperCase()).forEach(System.out::println);
 
     }
@@ -46,18 +46,15 @@ public class StreamAPITest1 {
 
     //3.排序
     @Test
-    public void test3(){
+    public void test3() {
         //sorted() 自然排序
         //sorted(Comparator com) 定制排序
         List<Integer> list = Arrays.asList(12, 35, 64, 43, 24, 26);
         list.stream().sorted().forEach(System.out::println);
         System.out.println("-----------------");
-        list.stream().sorted((e1,e2) -> Integer.compare(e1,e2)).forEach(System.out::println);
+        list.stream().sorted((e1, e2) -> Integer.compare(e1, e2)).forEach(System.out::println);
 
     }
-
-
-
 
 
 }

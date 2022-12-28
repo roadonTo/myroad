@@ -18,7 +18,7 @@ public class ObjectOutputStream_ {
         oos.writeInt(100);
         oos.writeBoolean(true);
         oos.writeChar('c');
-        oos.writeObject(new Dog("小黄",18));
+        oos.writeObject(new Dog("小黄", 18));
 
         oos.close();
         System.out.println("序列化完成~");

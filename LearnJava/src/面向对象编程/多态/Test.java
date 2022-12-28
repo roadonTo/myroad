@@ -6,7 +6,7 @@ public class Test {
 
         Animal animal = new Dog(); //向上转型
         Animal animal1 = new Cat();
-        Dog dog =  new Dog();
+        Dog dog = new Dog();
 
 
         getAnimal(animal);
@@ -23,11 +23,11 @@ public class Test {
         System.out.println(dog.getColor());// dog不能调用getAge方法，因为dog没有这个属性
 
 
-        Dog dog1 = (Dog)animal; //向下转型
+        Dog dog1 = (Dog) animal; //向下转型
         System.out.println(dog1.getTui());
 
         //这个只能通过编译，执行是要报错的
-        Dog dog2 = (Dog)new Animal(); //不能强转父类对象，只能强转父类的引用
+        Dog dog2 = (Dog) new Animal(); //不能强转父类对象，只能强转父类的引用
         //Exception in thread "main" java.lang.ClassCastException: 面向对象编程.多态.Animal cannot be cast to 面向对象编程.多态.Dog
         //	at 面向对象编程.多态.Test.main(Test.java:26)
         System.out.println(dog2.getTui());
@@ -43,7 +43,7 @@ public class Test {
     因为是猫 就写的是  (Cat cat){ cat.eat();  }
 
      */
-    public static void getAnimal(Animal animal){
+    public static void getAnimal(Animal animal) {
         animal.eat();
     }
 

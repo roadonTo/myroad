@@ -16,5 +16,4 @@ public interface EmpMapper {
     Emp getOneEmp(@Param("empId") Integer empId);
 
 
-
 }

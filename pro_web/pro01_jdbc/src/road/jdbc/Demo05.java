@@ -19,7 +19,7 @@ public class Demo05 {
         ResultSet resultSet = statement.executeQuery();
         //6.解析结果集
         ArrayList<Fruit> fruitArrayList = new ArrayList<>();
-        while (resultSet.next()){
+        while (resultSet.next()) {
             int fid = resultSet.getInt(1);
             String fname = resultSet.getString("fname");
             int price = resultSet.getInt(3);

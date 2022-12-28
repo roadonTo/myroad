@@ -7,6 +7,7 @@ public interface CacheMapper {
 
     /**
      * 根据员工id查询员工信息
+     *
      * @param empId
      * @return
      */
@@ -14,6 +15,7 @@ public interface CacheMapper {
 
     /**
      * 添加员工信息
+     *
      * @param emp
      */
     void insertEmp(Emp emp);

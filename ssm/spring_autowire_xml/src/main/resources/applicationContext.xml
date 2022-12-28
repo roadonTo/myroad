@@ -12,5 +12,4 @@
     <bean id="userDaoImpl" class="road.dao.impl.UserDaoImpl"></bean>
 
 
-
 </beans>

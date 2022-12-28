@@ -11,5 +11,4 @@ public class SaveOutlineMsg implements Serializable {
     public static ArrayList<Message> list = new ArrayList<>();
 
 
-
 }

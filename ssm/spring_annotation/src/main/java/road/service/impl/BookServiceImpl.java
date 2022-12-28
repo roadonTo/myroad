@@ -14,12 +14,12 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional(
-        //readOnly = true   只读
-        //timeout = 3   超时
-        //noRollbackFor = ArithmeticException.class     回滚
-        //noRollbackForClassName = "java.lang.ArithmeticException"    回滚
-        //isolation = Isolation.DEFAULT     隔离级别
-        //propagation = Propagation.REQUIRES_NEW    事务的传播
+            //readOnly = true   只读
+            //timeout = 3   超时
+            //noRollbackFor = ArithmeticException.class     回滚
+            //noRollbackForClassName = "java.lang.ArithmeticException"    回滚
+            //isolation = Isolation.DEFAULT     隔离级别
+            //propagation = Propagation.REQUIRES_NEW    事务的传播
     )
     public void buyBook(Integer userId, Integer bookId) {
 

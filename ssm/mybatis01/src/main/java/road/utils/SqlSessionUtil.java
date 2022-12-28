@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 public class SqlSessionUtil {
 
-    public static SqlSession getSqlSession(){
+    public static SqlSession getSqlSession() {
         SqlSession sqlSession = null;
         try {
             //获取核心配置文件的输入流

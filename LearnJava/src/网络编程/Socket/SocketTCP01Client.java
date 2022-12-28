@@ -12,7 +12,7 @@ public class SocketTCP01Client {
     public static void main(String[] args) throws IOException {
 
         //1. 客户端通过ip 和 端口号  创建一个Socket。如果连接成功会返回一个Socket对象
-        Socket socket = new Socket(InetAddress.getLocalHost(),9999);
+        Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
         System.out.println("socket = " + socket.getClass());
 
         //2. 通过socket.getOutputStream() 生成一个输出流，以便发出消息
@@ -25,8 +25,8 @@ public class SocketTCP01Client {
         InputStream inputStream = socket.getInputStream();
         byte[] bt = new byte[1024];
         int len = 0;
-        while ((len = inputStream.read(bt)) != -1){
-            System.out.println(new String(bt,0,len));
+        while ((len = inputStream.read(bt)) != -1) {
+            System.out.println(new String(bt, 0, len));
         }
 
         //4. 按顺序关闭所有流

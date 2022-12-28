@@ -32,10 +32,11 @@ public class EmployeeController {
 
     /**
      * 查看所有员工
+     *
      * @return
      */
     @RequestMapping(value = "/employee", method = RequestMethod.GET)
-    public String getAllEmployees(Model model){
+    public String getAllEmployees(Model model) {
         Collection<Employee> employees = employeeDao.getAll();
         model.addAttribute("employees", employees);
         return "employee_list";
@@ -43,11 +44,12 @@ public class EmployeeController {
 
     /**
      * 新增员工信息
+     *
      * @param employee
      * @return
      */
     @RequestMapping(value = "/employee", method = RequestMethod.POST)
-    public String addEmployee(Employee employee){
+    public String addEmployee(Employee employee) {
         employeeDao.save(employee);
         return "redirect:/employee";
     }
@@ -55,8 +57,8 @@ public class EmployeeController {
     /**
      * to update
      */
-    @RequestMapping( value = "/employee/{id}", method = RequestMethod.GET)
-    public String toUpdateEmp(@PathVariable("id") Integer id, Model model){
+    @RequestMapping(value = "/employee/{id}", method = RequestMethod.GET)
+    public String toUpdateEmp(@PathVariable("id") Integer id, Model model) {
         Employee employee = employeeDao.get(id); //查出要修改员工的信息
         model.addAttribute("employee", employee); //把信息放到请求域中
         return "employee_update"; //跳转到修改页面
@@ -64,11 +66,12 @@ public class EmployeeController {
 
     /**
      * 修改员工信息
+     *
      * @param employee
      * @return
      */
     @RequestMapping(value = "/employee", method = RequestMethod.PUT)
-    public String updateEmployee(Employee employee){
+    public String updateEmployee(Employee employee) {
         employeeDao.save(employee);
         return "redirect:/employee";
     }
@@ -76,15 +79,15 @@ public class EmployeeController {
 
     /**
      * 删除员工信息
+     *
      * @param id
      * @return
      */
     @RequestMapping(value = "/employee/{id}", method = RequestMethod.DELETE)
-    public String deleteEmployee(@PathVariable("id") Integer id){
+    public String deleteEmployee(@PathVariable("id") Integer id) {
         employeeDao.delete(id);
         return "redirect:/employee"; //这个没有写
     }
-
 
 
 }

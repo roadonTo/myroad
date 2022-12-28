@@ -4,13 +4,13 @@ import com.road.controller.Menu;
 
 public class Client {
     public static void main(String[] args) {
-        Menu m = new Menu() ;
+        Menu m = new Menu();
 
-        boolean flag = true ;
-        while(flag){
+        boolean flag = true;
+        while (flag) {
             //调用显示主菜单的方法
             int slt = m.showMainMenu();
-            switch(slt){
+            switch (slt) {
                 case 1:
                     //显示库存列表
                     m.showFruitList();
@@ -25,7 +25,7 @@ public class Client {
                     m.delFruit();
                     break;
                 case 5:
-                    flag=m.exit();
+                    flag = m.exit();
                     break;
                 default:
                     System.out.println("你不按套路出牌！");

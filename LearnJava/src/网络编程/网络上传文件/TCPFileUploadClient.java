@@ -1,7 +1,6 @@
 package 网络编程.网络上传文件;
 
 
-
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -22,7 +21,7 @@ public class TCPFileUploadClient {
         byte[] bytes = StreamUtils.streamToByteArray(fileInputStream);
 
         //创建socket 把图片发送给服务端
-        Socket socket = new Socket(InetAddress.getLocalHost(),8888);
+        Socket socket = new Socket(InetAddress.getLocalHost(), 8888);
         BufferedOutputStream bos = new BufferedOutputStream(socket.getOutputStream());
         bos.write(bytes);
         socket.shutdownOutput();

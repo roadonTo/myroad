@@ -11,11 +11,11 @@ public class User {
         System.out.println("步骤一：实例化");
     }
 
-    public void initMethod(){
+    public void initMethod() {
         System.out.println("步骤三：初始化");
     }
 
-    public void destoryMethod(){
+    public void destoryMethod() {
         System.out.println("步骤四：销毁");
     }
 

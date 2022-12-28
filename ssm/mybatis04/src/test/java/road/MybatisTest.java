@@ -12,7 +12,7 @@ import java.util.List;
 public class MybatisTest {
 
     @Test
-    public void test1(){
+    public void test1() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         List<Emp> emps = mapper.getEmps(null, "张三", null);
@@ -21,7 +21,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         List<Emp> emps = mapper.getEmps2(2, null, null);
@@ -30,7 +30,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp1 = new Emp(null, "kangkang", 18, "男");
@@ -43,16 +43,13 @@ public class MybatisTest {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp oneEmp = mapper.getOneEmp(1);
         System.out.println(oneEmp);
 
     }
-
-
-
 
 
 }

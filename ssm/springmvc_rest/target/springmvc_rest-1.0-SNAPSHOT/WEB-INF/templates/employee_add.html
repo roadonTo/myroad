@@ -7,28 +7,28 @@
     <title>employee_add</title>
 </head>
 <body>
-    <form th:action="@{/employee}" method="post">
-        <table>
-            <tr>
-                <td>
-                   姓名： <input type="text" name="lastName">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    邮箱： <input type="text" name="email">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    性别：
-                    <input type="radio" name="gender" value="1">male
-                    <input type="radio" name="gender" value="0">female
-                </td>
-            </tr>
+<form th:action="@{/employee}" method="post">
+    <table>
+        <tr>
+            <td>
+                姓名： <input type="text" name="lastName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                邮箱： <input type="text" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                性别：
+                <input type="radio" name="gender" value="1">male
+                <input type="radio" name="gender" value="0">female
+            </td>
+        </tr>
 
-        </table>
-        <input type="submit" value="提交">
-    </form>
+    </table>
+    <input type="submit" value="提交">
+</form>
 </body>
 </html>

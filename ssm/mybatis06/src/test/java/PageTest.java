@@ -12,7 +12,6 @@ import java.util.List;
 public class PageTest {
 
 
-
     /**
      * PageInfo{
      * pageNum=1, pageSize=4, size=4,
@@ -26,7 +25,7 @@ public class PageTest {
      */
 
     @Test
-    public void testPage(){
+    public void testPage() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         //查询功能之前开启分页功能

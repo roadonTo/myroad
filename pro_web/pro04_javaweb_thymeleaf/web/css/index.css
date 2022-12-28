@@ -1,53 +1,61 @@
-*{
-	color: threeddarkshadow;
-}
-body{
-	margin:0;
-	padding:0;
-	background-color:#808080;
-}
-div{
-	position:relative;
-	float:left;
+* {
+    color: threeddarkshadow;
 }
 
-#div_container{
-	width:80%;
-	height:100%;
-	border:0px solid blue;
-	margin-left:10%;
-	float:left;
-	background-color: honeydew;
-	border-radius:8px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #808080;
 }
-#div_fruit_list{
-	width:100%;
-	border:0px solid red;
+
+div {
+    position: relative;
+    float: left;
 }
-#tbl_fruit{
-	width:60%;
-	line-height:28px;
-	margin-top:120px;
-	margin-left:20%;
+
+#div_container {
+    width: 80%;
+    height: 100%;
+    border: 0px solid blue;
+    margin-left: 10%;
+    float: left;
+    background-color: honeydew;
+    border-radius: 8px;
 }
-#tbl_fruit , #tbl_fruit tr , #tbl_fruit th , #tbl_fruit td{
-	border:1px solid gray;
-	border-collapse:collapse;
-	text-align:center;
-	font-size:16px;
-	font-family:"黑体";
-	font-weight:lighter;
-	
+
+#div_fruit_list {
+    width: 100%;
+    border: 0px solid red;
 }
-.w20{
-	width:20%;
+
+#tbl_fruit {
+    width: 60%;
+    line-height: 28px;
+    margin-top: 120px;
+    margin-left: 20%;
 }
-.delImg{
-	width:24px;
-	height:24px;
+
+#tbl_fruit, #tbl_fruit tr, #tbl_fruit th, #tbl_fruit td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+    font-family: "黑体";
+    font-weight: lighter;
+
 }
-.btn{
-	border:1px solid lightgray;
-	width:80px;
-	height:24px;
+
+.w20 {
+    width: 20%;
+}
+
+.delImg {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    border: 1px solid lightgray;
+    width: 80px;
+    height: 24px;
 }

@@ -8,7 +8,7 @@ public class MybatisTest {
 
 
     @Test
-    public void test1(){
+    public void test1() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         //根据id查询数据

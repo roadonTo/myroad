@@ -20,8 +20,8 @@ public class TCPFileDownloadServer {
         int len = 0;
         byte[] bytes = new byte[1024];
         BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
-        while((len = bis.read(bytes)) != -1){
-            stringBuilder.append(new String(bytes,0,len) );
+        while ((len = bis.read(bytes)) != -1) {
+            stringBuilder.append(new String(bytes, 0, len));
         }
         String s = stringBuilder.toString();
 
@@ -32,8 +32,8 @@ public class TCPFileDownloadServer {
         arrayList.add("南下");
         arrayList.add("一样的月光");
         arrayList.add("江湖之间");
-        if (arrayList.contains(s)){ //如果为真，说明本地有这个文件
-            String localMusicPath = "C:\\Users\\Administrator\\Music\\" + s +".mp3";
+        if (arrayList.contains(s)) { //如果为真，说明本地有这个文件
+            String localMusicPath = "C:\\Users\\Administrator\\Music\\" + s + ".mp3";
             //从硬盘输入到服务器
             BufferedInputStream bis1 = new BufferedInputStream(new FileInputStream(localMusicPath));
             byte[] bytes1 = StreamUtils.streamToByteArray(bis1);

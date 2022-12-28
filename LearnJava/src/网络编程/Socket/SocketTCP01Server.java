@@ -1,7 +1,6 @@
 package 网络编程.Socket;
 
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -22,8 +21,8 @@ public class SocketTCP01Server {
         InputStream inputStream = socket.getInputStream();
         byte[] bt = new byte[1024];
         int len = 0;
-        while ((len = inputStream.read(bt)) != -1){
-            System.out.println(new String(bt,0,len));
+        while ((len = inputStream.read(bt)) != -1) {
+            System.out.println(new String(bt, 0, len));
         }
 
         OutputStream outputStream = socket.getOutputStream();

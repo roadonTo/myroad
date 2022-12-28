@@ -7,6 +7,7 @@ public interface EmpMapper {
 
     /**
      * 处理字段名和属性名不一致的情况
+     *
      * @param empId
      * @return
      */
@@ -16,6 +17,7 @@ public interface EmpMapper {
 
     /**
      * 处理多对一的映射关系
+     *
      * @param empId
      * @return
      */

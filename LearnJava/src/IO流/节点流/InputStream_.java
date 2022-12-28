@@ -18,20 +18,20 @@ public class InputStream_ {
     }
 
     @Test
-    public void readObject(){
+    public void readObject() {
         String filePath = "e:\\a.txt";
         FileInputStream fileInputStream = null;
         int readData = 0;
         try {
             fileInputStream = new FileInputStream(filePath);
             //这是最基本的调用read()方法一个一个的读取字节，效率低且无法读取到汉字之类的，会乱码
-            while((readData = fileInputStream.read()) != -1) {
+            while ((readData = fileInputStream.read()) != -1) {
                 System.out.print((char) readData);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 fileInputStream.close();
             } catch (IOException e) {
@@ -43,7 +43,7 @@ public class InputStream_ {
     }
 
     @Test
-    public void readObject2(){
+    public void readObject2() {
         String filePath = "e:\\test3";
         FileInputStream fileInputStream = null;
         byte[] buf = new byte[8];
@@ -51,12 +51,12 @@ public class InputStream_ {
         try {
             fileInputStream = new FileInputStream(filePath);
             //这是调用read(byte[] b) 方法，一次读取多个字节，提高了效率
-            while ((readData = fileInputStream.read(buf)) != -1){
-                System.out.print(new String(buf,0,readData));
+            while ((readData = fileInputStream.read(buf)) != -1) {
+                System.out.print(new String(buf, 0, readData));
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 fileInputStream.close();
             } catch (IOException e) {

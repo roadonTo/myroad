@@ -27,7 +27,7 @@ public class StreamAPITest2 {
 
     //1.匹配与查找
     @Test
-    public void test1(){
+    public void test1() {
         List<Employee> employees = EmployeeData.getEmployees();
         boolean b = employees.stream().allMatch(e -> e.getAge() > 18);
         System.out.println(b);
@@ -48,7 +48,7 @@ public class StreamAPITest2 {
     //reduce(T identity, BinaryOperator)---可以将流中元素反复结合起来，得到一个值，返回T
     //reduce(BinaryOperator)---可以将流中元素反复结合起来，得到一个值，返回Optional<T>
     @Test
-    public void test2(){
+    public void test2() {
         List<Integer> list = Arrays.asList(1, 3, 3, 4, 6, 7, 6);
         Integer reduce = list.stream().reduce(0, Integer::sum);
         System.out.println(reduce);
@@ -60,7 +60,7 @@ public class StreamAPITest2 {
     //collect(Collector c)---将流转换为其他形式，接收一个Collector接口的实现，
     //里面传入 Collectors拥有的方法 例如 toList 转成list集合，toSet 转成set集合
     @Test
-    public void test3(){
+    public void test3() {
         List<Employee> list = EmployeeData.getEmployees();
         List<Employee> employeeList = list.stream().filter(e -> e.getAge() > 15).collect(Collectors.toList());
         employeeList.forEach(System.out::println);

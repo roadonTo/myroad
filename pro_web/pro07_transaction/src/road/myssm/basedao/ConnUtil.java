@@ -10,12 +10,12 @@ public class ConnUtil {
     //private static ThreadLocal<Object> threadLocal2 = new ThreadLocal<>();
     //private static ThreadLocal<Object> threadLocal3 = new ThreadLocal<>();
 
-    public static final String DRIVER = "com.mysql.jdbc.Driver" ;
+    public static final String DRIVER = "com.mysql.jdbc.Driver";
     public static final String URL = "jdbc:mysql://localhost:3306/fruitdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
     public static final String USER = "root";
-    public static final String PWD = "123456" ;
+    public static final String PWD = "123456";
 
-    private static Connection createConn(){
+    private static Connection createConn() {
         try {
             //1.加载驱动
             Class.forName(DRIVER);
@@ -24,24 +24,24 @@ public class ConnUtil {
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
-        return null ;
+        return null;
     }
 
-    public static Connection getConn(){
+    public static Connection getConn() {
         Connection conn = threadLocal.get();
-        if(conn==null){
-            conn =createConn();
+        if (conn == null) {
+            conn = createConn();
             threadLocal.set(conn);
         }
-        return threadLocal.get() ;
+        return threadLocal.get();
     }
 
     public static void closeConn() throws SQLException {
         Connection conn = threadLocal.get();
-        if(conn==null){
-            return ;
+        if (conn == null) {
+            return;
         }
-        if(!conn.isClosed()){
+        if (!conn.isClosed()) {
             conn.close();
             threadLocal.set(null);
         }

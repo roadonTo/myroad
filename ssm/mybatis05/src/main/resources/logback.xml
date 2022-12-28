@@ -13,7 +13,7 @@
     <!-- 指定任何一个日志级别都只打印当前级别和后面级别的日志。 -->
     <root level="DEBUG">
         <!-- 指定打印日志的appender，这里通过“STDOUT”引用了前面配置的appender -->
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
     </root>
 
     <!-- 根据特殊需求指定局部日志级别 -->

@@ -16,13 +16,13 @@ public class LoggerAspect {
         Signature signature = joinPoint.getSignature();
         //获取连接点所对应方法的参数
         Object[] args = joinPoint.getArgs();
-        System.out.println("LoggerAspect，方法："+signature.getName()+"，参数："+ Arrays.toString(args));
+        System.out.println("LoggerAspect，方法：" + signature.getName() + "，参数：" + Arrays.toString(args));
     }
 
-    public void afterAdviceMethod(JoinPoint joinPoint){
+    public void afterAdviceMethod(JoinPoint joinPoint) {
         //获取连接点所对应方法的签名信息
         Signature signature = joinPoint.getSignature();
-        System.out.println("LoggerAspect，方法："+signature.getName()+"，执行完毕");
+        System.out.println("LoggerAspect，方法：" + signature.getName() + "，执行完毕");
     }
 
     /**
@@ -30,10 +30,10 @@ public class LoggerAspect {
      * 只需要通过@AfterReturning注解的returning属性
      * 就可以将通知方法的某个参数指定为接收目标对象方法的返回值的参数
      */
-    public void afterReturningAdviceMethod(JoinPoint joinPoint, Object result){
+    public void afterReturningAdviceMethod(JoinPoint joinPoint, Object result) {
         //获取连接点所对应方法的签名信息
         Signature signature = joinPoint.getSignature();
-        System.out.println("LoggerAspect，方法："+signature.getName()+"，结果："+result);
+        System.out.println("LoggerAspect，方法：" + signature.getName() + "，结果：" + result);
     }
 
     /**
@@ -41,14 +41,14 @@ public class LoggerAspect {
      * 只需要通过AfterThrowing注解的throwing属性
      * 就可以将通知方法的某个参数指定为接收目标对象方法出现的异常的参数
      */
-    public void afterThrowingAdviceMethod(JoinPoint joinPoint, Throwable ex){
+    public void afterThrowingAdviceMethod(JoinPoint joinPoint, Throwable ex) {
         //获取连接点所对应方法的签名信息
         Signature signature = joinPoint.getSignature();
-        System.out.println("LoggerAspect，方法："+signature.getName()+"，异常："+ex);
+        System.out.println("LoggerAspect，方法：" + signature.getName() + "，异常：" + ex);
     }
 
     //环绕通知的方法的返回值一定要和目标对象方法的返回值一致
-    public Object aroundAdviceMethod(ProceedingJoinPoint joinPoint){
+    public Object aroundAdviceMethod(ProceedingJoinPoint joinPoint) {
         Object result = null;
         try {
             System.out.println("环绕通知-->前置通知");

@@ -14,8 +14,8 @@ import road.controller.BookController;
  * 1、在Spring的配置文件中配置事务管理器
  * 2、开启事务的注解驱动
  * 在需要被事务管理的方法上，添加@Transactional注解，该方法就会被事务管理
- * @Transactional注解标识的位置：
- * 1、标识在方法上
+ *
+ * @Transactional注解标识的位置： 1、标识在方法上
  * 2、标识在类上，则类中所有的方法都会被事务管理
  */
 
@@ -27,8 +27,8 @@ public class TxByAnnotationTest {
     private BookController bookController;
 
     @Test
-    public void test1(){
-        bookController.buyBook(1,1);
+    public void test1() {
+        bookController.buyBook(1, 1);
     }
 
 

@@ -24,18 +24,18 @@ public class FileCopy {
             fileInputStream = new FileInputStream(pathread);
             fileOutputStream = new FileOutputStream(pathwrite);
 
-            while ((len = fileInputStream.read(buf)) != -1){
-                fileOutputStream.write(buf,0,len);
+            while ((len = fileInputStream.read(buf)) != -1) {
+                fileOutputStream.write(buf, 0, len);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if (fileInputStream != null){
+                if (fileInputStream != null) {
                     fileInputStream.close();
                 }
-                if (fileOutputStream != null){
+                if (fileOutputStream != null) {
                     fileOutputStream.close();
                 }
             } catch (IOException e) {

@@ -13,10 +13,8 @@
 
     -->
     <context:component-scan base-package="road">
-<!--        <context:exclude-filter type="assignable" expression="road.pojo.User"/>-->
+        <!--        <context:exclude-filter type="assignable" expression="road.pojo.User"/>-->
     </context:component-scan>
-
-
 
 
 </beans>

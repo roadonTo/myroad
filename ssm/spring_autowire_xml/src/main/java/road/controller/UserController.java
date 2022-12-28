@@ -10,7 +10,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    public void mSave(){
+    public void mSave() {
         userService.saveUser();
     }
 

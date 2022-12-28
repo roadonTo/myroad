@@ -10,11 +10,11 @@ public class Properties1 {
 
         Properties properties = new Properties();
 
-        properties.setProperty("name","汤姆");
-        properties.setProperty("age","18");
-        properties.setProperty("sex","公");
+        properties.setProperty("name", "汤姆");
+        properties.setProperty("age", "18");
+        properties.setProperty("sex", "公");
 
-        properties.store(new FileWriter("mysql.properties"),null);
+        properties.store(new FileWriter("mysql.properties"), null);
 
 
     }

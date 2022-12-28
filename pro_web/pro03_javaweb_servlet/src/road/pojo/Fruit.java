@@ -1,13 +1,14 @@
 package road.pojo;
 
 public class Fruit {
-    private Integer fid ;
-    private String fname ;
-    private Integer price ;
-    private Integer fcount ;
-    private String remark ;
+    private Integer fid;
+    private String fname;
+    private Integer price;
+    private Integer fcount;
+    private String remark;
 
-    public Fruit(){}
+    public Fruit() {
+    }
 
     public Fruit(Integer fid, String fname, Integer price, Integer fcount, String remark) {
         this.fid = fid;
@@ -59,7 +60,7 @@ public class Fruit {
 
     @Override
     public String toString() {
-        return fid + "\t\t" + fname + "\t\t" + price +"\t\t" + fcount +"\t\t" + remark ;
+        return fid + "\t\t" + fname + "\t\t" + price + "\t\t" + fcount + "\t\t" + remark;
     }
 }
 

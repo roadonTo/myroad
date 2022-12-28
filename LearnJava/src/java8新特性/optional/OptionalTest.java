@@ -18,14 +18,14 @@ Optional.ofNullable(T t): t可以为null
  */
 
     @Test
-    public void test1(){
+    public void test1() {
         Girl girl = new Girl();
         Optional<Girl> optionalGirl = Optional.of(girl);
         System.out.println(optionalGirl);
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         Girl girl = new Girl();
         Optional<Girl> optionalGirl = Optional.ofNullable(girl);
         System.out.println(optionalGirl);

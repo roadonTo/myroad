@@ -17,10 +17,10 @@ public class Demo02 {
         //4.创建预处理命令对象
         PreparedStatement statement = connection.prepareStatement(sql);
         //5.填充参数
-        statement.setString(1,"西瓜");
-        statement.setInt(2,30);
-        statement.setInt(3,11);
-        statement.setString(4,"谢谢你");
+        statement.setString(1, "西瓜");
+        statement.setInt(2, 30);
+        statement.setInt(3, 11);
+        statement.setString(4, "谢谢你");
         //6.执行更新（增删改），返回影响行数
         int count = statement.executeUpdate();
         System.out.println(count > 0 ? "添加成功" : "添加失败");

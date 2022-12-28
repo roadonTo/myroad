@@ -26,7 +26,7 @@ public class ClientConnectServerThread extends Thread {
     @Override
     public void run() {
         //因为要保持和服务端通信，所以用while循环
-        while (true){
+        while (true) {
             ObjectInputStream ois = null;
             try {
                 ois = new ObjectInputStream(socket.getInputStream());
@@ -34,15 +34,15 @@ public class ClientConnectServerThread extends Thread {
                 Message msg = (Message) ois.readObject();
 
                 //判断服务端返回的Message类型
-                if (msg.getMsgType().equals(MessageType.MESSAGE_ONLINE_RETURN)){
+                if (msg.getMsgType().equals(MessageType.MESSAGE_ONLINE_RETURN)) {
                     System.out.print("\n在线用户有：");
                     //用一个数组来接收 返回的在线用户们的名字
                     String[] split = msg.getContent().split(","); //这里表示规定 返回的名字格式 是用逗号分隔的
                     for (int i = 0; i < split.length; i++) {
                         System.out.print(split[i] + "\t");
                     }
-                } else if (msg.getMsgType().equals(MessageType.MESSAGE_COMMON)){
-                    System.out.println("\n" + msg.getSender() + "给 "+ msg.getGetter() + "发送：" + msg.getContent());
+                } else if (msg.getMsgType().equals(MessageType.MESSAGE_COMMON)) {
+                    System.out.println("\n" + msg.getSender() + "给 " + msg.getGetter() + "发送：" + msg.getContent());
                 }
 
 

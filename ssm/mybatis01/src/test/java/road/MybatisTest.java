@@ -1,4 +1,5 @@
 package road;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -32,7 +33,7 @@ public class MybatisTest {
         int result = mapper.insertUser();
         //提供sql以及的唯一标识找到sql并执行，唯一标识是namespace.sqlId
         /*int result = sqlSession.insert("com.atguigu.mybatis.mapper.UserMapper.insertUser");*/
-        System.out.println("结果："+result);
+        System.out.println("结果：" + result);
         //提交事务
         sqlSession.commit();
         //关闭SqlSession
@@ -40,9 +41,8 @@ public class MybatisTest {
     }
 
 
-
     @Test
-    public void testGetUserById(){
+    public void testGetUserById() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getUserById();
@@ -50,7 +50,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void testGetAllUser(){
+    public void testGetAllUser() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<User> list = mapper.getAllUser();

@@ -15,14 +15,14 @@ public class TestDatasource {
 
 
     @Test
-    public void test1(){
+    public void test1() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-datasource.xml");
         DruidDataSource dataSource = context.getBean(DruidDataSource.class);
         try {
-             connection = dataSource.getConnection();
-             statement = connection.prepareStatement("select * from user");
-             resultSet = statement.executeQuery();
-            while (resultSet.next()){
+            connection = dataSource.getConnection();
+            statement = connection.prepareStatement("select * from user");
+            resultSet = statement.executeQuery();
+            while (resultSet.next()) {
                 System.out.println(resultSet.getString("username")); //可以输出值，说明连上了数据库
             }
 
@@ -41,7 +41,6 @@ public class TestDatasource {
 
 
     }
-
 
 
 }

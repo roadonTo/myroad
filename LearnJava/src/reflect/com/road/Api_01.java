@@ -12,13 +12,13 @@ public class Api_01 {
         System.out.println(cat.getSimpleName());
         //getFields() 获取所有的public属性，包含本类及父类的
         Field[] fields = cat.getFields();
-        for (Field field:fields) {
+        for (Field field : fields) {
             System.out.println("本类及父类中的属性=" + field.getName());
         }
 
         //getDeclaredFields() 获取本类中所有属性
         Field[] declaredFields = cat.getDeclaredFields();
-        for (Field f :declaredFields) {
+        for (Field f : declaredFields) {
             System.out.println("本类中所有属性=" + f.getName());
         }
 

@@ -38,7 +38,7 @@ public interface UserMapper {
      */
     List<Map<String, Object>> getUserLike(@Param("mohu") String mohu); //模糊查询 (你不知道有几个所以用map)
 
-    int deleteUserById(@Param("ids")String ids); //批量删除
+    int deleteUserById(@Param("ids") String ids); //批量删除
 
     void insertOneUser(User user); //获取自增的主键
 

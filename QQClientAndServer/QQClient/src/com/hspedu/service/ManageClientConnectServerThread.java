@@ -11,12 +11,12 @@ public class ManageClientConnectServerThread {
     private static HashMap<String, ClientConnectServerThread> hm = new HashMap<>();
 
     //把线程添加进集合
-    public static void addCcst(String userId, ClientConnectServerThread cCst){
+    public static void addCcst(String userId, ClientConnectServerThread cCst) {
         hm.put(userId, cCst);
     }
 
     //通过userId 得到对应线程
-    public ClientConnectServerThread getCcst(String userId){
+    public ClientConnectServerThread getCcst(String userId) {
         return hm.get(userId);
     }
 

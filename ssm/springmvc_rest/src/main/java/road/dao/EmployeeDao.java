@@ -12,7 +12,7 @@ public class EmployeeDao {
 
     private static Map<Integer, Employee> employees = null;
 
-    static{
+    static {
         employees = new HashMap<Integer, Employee>();
 
         employees.put(1001, new Employee(1001, "E-AA", "aa@163.com", 1));
@@ -24,22 +24,22 @@ public class EmployeeDao {
 
     private static Integer initId = 1006;
 
-    public void save(Employee employee){
-        if(employee.getId() == null){
+    public void save(Employee employee) {
+        if (employee.getId() == null) {
             employee.setId(initId++);
         }
         employees.put(employee.getId(), employee);
     }
 
-    public Collection<Employee> getAll(){
+    public Collection<Employee> getAll() {
         return employees.values();
     }
 
-    public Employee get(Integer id){
+    public Employee get(Integer id) {
         return employees.get(id);
     }
 
-    public void delete(Integer id){
+    public void delete(Integer id) {
         employees.remove(id);
     }
 

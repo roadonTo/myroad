@@ -13,6 +13,7 @@ public class BookDaoImpl implements BookDao {
 
     /**
      * 根据图书的id查询图书的价格
+     *
      * @param bookId
      * @return
      */
@@ -23,7 +24,8 @@ public class BookDaoImpl implements BookDao {
     }
 
     /**
-     *更新图书的库存
+     * 更新图书的库存
+     *
      * @param bookId
      */
     @Override
@@ -33,7 +35,8 @@ public class BookDaoImpl implements BookDao {
     }
 
     /**
-     *更新用户的余额
+     * 更新用户的余额
+     *
      * @param userId
      * @param price
      */

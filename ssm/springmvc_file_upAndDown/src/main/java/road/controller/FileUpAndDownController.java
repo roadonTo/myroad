@@ -37,7 +37,7 @@ public class FileUpAndDownController {
         //创建photoPath所对应的File对象
         File file = new File(photoPath);
         //判断file所对应目录是否存在
-        if(!file.exists()){
+        if (!file.exists()) {
             file.mkdir();
         }
         String finalPath = photoPath + File.separator + fileName;
@@ -45,7 +45,6 @@ public class FileUpAndDownController {
         photo.transferTo(new File(finalPath));
         return "success";
     }
-
 
 
     @RequestMapping("/test/down")

@@ -31,7 +31,7 @@ public class ReflectCreateInstance {
 }
 
 
-class User{
+class User {
     private int age;
     private String name;
 

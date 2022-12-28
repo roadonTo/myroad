@@ -16,13 +16,13 @@ public class OpenSessionInViewFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        try{
+        try {
             TransactionManager.beginTrans();
             System.out.println("开启事务....");
             filterChain.doFilter(servletRequest, servletResponse);
             TransactionManager.commit();
             System.out.println("提交事务...");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             try {
                 TransactionManager.rollback();

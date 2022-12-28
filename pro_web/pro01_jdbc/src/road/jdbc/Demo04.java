@@ -16,7 +16,7 @@ public class Demo04 {
 
         String sql = "delete from fruit where fid=?";
         PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setInt(1,1);
+        statement.setInt(1, 1);
 
         int i = statement.executeUpdate();
         System.out.println(i > 0 ? "删除成功" : "删除失败");

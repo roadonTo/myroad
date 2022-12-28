@@ -10,7 +10,7 @@ import java.util.Map;
 public class MybatisTest {
 
     @Test
-    public void test1(){
+    public void test1() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getByName("sakura");
@@ -18,7 +18,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getUser1("sakura", "123");
@@ -26,7 +26,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getUser2("sakura", "123");
@@ -34,7 +34,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = new User(null, "333", "222", 13, "男", "1234@dd.com");
@@ -43,7 +43,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<User> userList = mapper.getAllUser();
@@ -52,7 +52,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         String email = mapper.getOneName("sakura");
@@ -61,7 +61,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test7(){
+    public void test7() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         Map<String, Object> objectMap = mapper.getUserColumns(2);
@@ -69,7 +69,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test8(){
+    public void test8() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<Map<String, Object>> someUsersColumns = mapper.getSomeUsersColumns();
@@ -77,7 +77,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test9(){
+    public void test9() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<Map<String, Object>> mapList = mapper.getUserLike("kang");
@@ -86,7 +86,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test10(){
+    public void test10() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         int i = mapper.deleteUserById("4, 5");
@@ -94,7 +94,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test11(){
+    public void test11() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = new User(null, "333", "222", 13, "男", "1234@dd.com");

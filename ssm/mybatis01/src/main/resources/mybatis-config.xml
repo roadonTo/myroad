@@ -14,7 +14,7 @@
 <configuration>
 
     <!--引入properties文件，此后就可以在当前文件中使用${key}的方式访问value-->
-    <properties resource="jdbc.properties" />
+    <properties resource="jdbc.properties"/>
 
     <typeAliases>
         <!--type：设置需要起别名的类型, alias：设置某个类型的别名-->
@@ -52,7 +52,7 @@
 
     <!--引入mybatis的映射文件-->
     <mappers>
-<!--        <mapper resource="mappers/UserMapper.xml"/>-->
+        <!--        <mapper resource="mappers/UserMapper.xml"/>-->
         <!--
             以包的方式引入映射文件，但是必须满足两个条件：
             1、mapper接口和映射文件所在的包必须一致

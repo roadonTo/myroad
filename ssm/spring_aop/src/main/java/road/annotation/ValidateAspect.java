@@ -12,7 +12,7 @@ public class ValidateAspect {
 
     //@Before("execution(* com.atguigu.spring.aop.annotation.CalculatorImpl.*(..))")
     @Before("road.annotation.LoggerAspect.pointCut()")
-    public void beforeMethod(){
+    public void beforeMethod() {
         System.out.println("ValidateAspect-->前置通知");
     }
 

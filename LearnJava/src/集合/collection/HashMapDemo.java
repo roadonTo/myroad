@@ -39,11 +39,11 @@ public class HashMapDemo {
 
             if (value == null) {
                 //如果返回值是null：说明该字符在HashMap集合中不存在，就把该字符作为键，1作为值存储
-                hm.put(key,1);
+                hm.put(key, 1);
             } else {
                 //如果返回值不是null：说明该字符在HashMap集合中存在，把该值加1，然后重新存储该字符和对应的值
                 value++;
-                hm.put(key,value);
+                hm.put(key, value);
             }
         }
 
@@ -51,7 +51,7 @@ public class HashMapDemo {
         StringBuilder sb = new StringBuilder();
 
         Set<Character> keySet = hm.keySet();
-        for(Character key : keySet) {
+        for (Character key : keySet) {
             Integer value = hm.get(key);
             sb.append(key).append("(").append(value).append(")");
         }

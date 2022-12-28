@@ -68,25 +68,19 @@
     </select>
 
 
-<!--    <resultMap id="getEmpByStepxxx" type="Emp">-->
-<!--        <id column="emp_id" property="empId"></id>-->
-<!--        <result column="emp_name" property="empName"></result>-->
-<!--        <result column="age" property="age"></result>-->
-<!--        <result column="gender" property="gender"></result>-->
-<!--        设置 fetchType = "eager" 立即加载 -->
-<!--       <association property="dept" select="road.mapper.DeptMapper.getDeptByStepTwo" fetchType="eager"-->
-<!--                     column="dept_id"></association>-->
-<!--    </resultMap>-->
-<!--    -->
-<!--    <select id="getDeptByStepOnexxx" resultMap="getEmpByStepxxx">-->
-<!--        select emp_name from t_emp where emp_id = #{empId};-->
-<!--    </select>-->
-
-
-
-
-
-
+    <!--    <resultMap id="getEmpByStepxxx" type="Emp">-->
+    <!--        <id column="emp_id" property="empId"></id>-->
+    <!--        <result column="emp_name" property="empName"></result>-->
+    <!--        <result column="age" property="age"></result>-->
+    <!--        <result column="gender" property="gender"></result>-->
+    <!--        设置 fetchType = "eager" 立即加载 -->
+    <!--       <association property="dept" select="road.mapper.DeptMapper.getDeptByStepTwo" fetchType="eager"-->
+    <!--                     column="dept_id"></association>-->
+    <!--    </resultMap>-->
+    <!--    -->
+    <!--    <select id="getDeptByStepOnexxx" resultMap="getEmpByStepxxx">-->
+    <!--        select emp_name from t_emp where emp_id = #{empId};-->
+    <!--    </select>-->
 
 
 </mapper>

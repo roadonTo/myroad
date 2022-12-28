@@ -11,13 +11,13 @@ public class TestJdbcUtils {
         Connection connection = JdbcUtils.getConnection();
         String sql = "select * from fruit where fid = ?";
         PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setInt(1,2);
+        statement.setInt(1, 2);
         ResultSet resultSet = statement.executeQuery();
-        if (resultSet.next()){
+        if (resultSet.next()) {
             System.out.println(resultSet.getString("fname") + "的数量为：" + resultSet.getInt(4));
         }
 
-        JdbcUtils.release(connection,statement,resultSet);
+        JdbcUtils.release(connection, statement, resultSet);
 
     }
 }

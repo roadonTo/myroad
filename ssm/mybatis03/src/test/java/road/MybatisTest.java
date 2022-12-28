@@ -14,7 +14,7 @@ import java.util.List;
 public class MybatisTest {
 
     @Test
-    public void test1(){
+    public void test1() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp = mapper.getEmpById1(2);
@@ -22,7 +22,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp = mapper.getEmpById2(3);
@@ -30,7 +30,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp = mapper.getEmpById3(3);
@@ -38,7 +38,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp = mapper.getEmpById4(1);
@@ -46,7 +46,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp = mapper.getDeptByStepOne(1);
@@ -55,24 +55,12 @@ public class MybatisTest {
 
 
     @Test
-    public void test6(){
+    public void test6() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
         List<Dept> deptAndEmpList = mapper.getDeptAndEmp(3);
         deptAndEmpList.forEach(System.out::println);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

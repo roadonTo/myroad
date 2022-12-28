@@ -87,7 +87,7 @@
         <property name="name" value="kangkang"></property>
         <property name="age" value="21"></property>
         <property name="gender" value="男"></property>
-        <property name="studentMap" >
+        <property name="studentMap">
             <map>
                 <entry key="aaa" value-ref="student1"></entry>
                 <entry key="bbb" value-ref="student3"></entry>
@@ -115,11 +115,6 @@
 
     <!--FactoryBean 的使用-->
     <bean id="factoryBean" class="road.pojo.service.impl.FactoryBeanImpl"></bean>
-
-
-
-
-
 
 
 </beans>

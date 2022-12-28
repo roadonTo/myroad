@@ -18,14 +18,13 @@ public class ArrayAssign {
         System.out.println("a2 = " + a2);
 
         //2.引用类型赋值 传递的是地址   数组是引用类型
-        int[] arr1 = {3,5,8};
+        int[] arr1 = {3, 5, 8};
         int[] arr2 = arr1;
         arr2[0] = 333;  //改变arr2的第一个元素，结果arr1的第一个元素也跟着变了
 
-        for(int i = 0; i < arr1.length; i++){
+        for (int i = 0; i < arr1.length; i++) {
             System.out.println("arr1 = " + arr1[i]);
         }
-
 
 
     }

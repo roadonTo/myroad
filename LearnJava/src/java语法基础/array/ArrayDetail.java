@@ -8,10 +8,10 @@ public class ArrayDetail {
     public static void main(String[] args) {
 
         //1.数组是多个同类型数据的组合
-        double[] arr2 = {1.1 , 2.2 , 60 , 78};//int -> double  低精度转高 这个是可以放数组里的 反过来不行
+        double[] arr2 = {1.1, 2.2, 60, 78};//int -> double  低精度转高 这个是可以放数组里的 反过来不行
 
         //2.数组中的元素可以是任何数据类型，包括基本类型和引用类型，但是不能混用
-        String[] arr3= {"jack","北京","kangkang"};
+        String[] arr3 = {"jack", "北京", "kangkang"};
 
         //3.数组创建后，如果没有赋值 ，有默认值
         //int、short、byte、long  0 ,

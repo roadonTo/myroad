@@ -25,7 +25,6 @@ import java.util.Properties;
  * 代替springmvc的配置文件
  * 扫描组件、视图解析器、默认的servlet、mvc的注解驱动
  * 视图控制器、文件上传解析器、拦截器、异常解析器
- *
  */
 
 @Configuration //将类标识为配置类
@@ -47,7 +46,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     //@Bean注解可以将标识的方法的返回值作为bean进行管理，bean的id为方法的方法名
     @Bean
-    public CommonsMultipartResolver multipartResolver(){
+    public CommonsMultipartResolver multipartResolver() {
         return new CommonsMultipartResolver();
     }
 

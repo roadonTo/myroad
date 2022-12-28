@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 
 public class OutputStreamWriter_ {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         String filePath = "e:\\translate.txt";
         String charset = "gbk";

@@ -15,7 +15,7 @@ public class DemoServlet_session extends HttpServlet {
         HttpSession session = request.getSession();
         System.out.println("session ID:" + session.getId());
         //往session中保存数据
-        request.getSession().setAttribute("name","sakura");
+        request.getSession().setAttribute("name", "sakura");
         Object name = request.getSession().getAttribute("name");
         System.out.println(name);
 

@@ -11,15 +11,15 @@ public class BufferedCopy {
 
         String srcFile = "e:\\a.txt";
         String toFile = "e:\\a2.txt";
-        BufferedReader bufferedReader = null ;
+        BufferedReader bufferedReader = null;
         BufferedWriter bufferedWriter = null;
-        String line ;
+        String line;
 
         try {
-             bufferedReader = new BufferedReader(new FileReader(srcFile));
-             bufferedWriter = new BufferedWriter(new FileWriter(toFile));
+            bufferedReader = new BufferedReader(new FileReader(srcFile));
+            bufferedWriter = new BufferedWriter(new FileWriter(toFile));
 
-            while((line = bufferedReader.readLine()) != null){
+            while ((line = bufferedReader.readLine()) != null) {
                 bufferedWriter.write(line);
                 bufferedWriter.newLine();
             }

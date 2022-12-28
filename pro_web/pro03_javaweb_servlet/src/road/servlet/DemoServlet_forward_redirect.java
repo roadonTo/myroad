@@ -21,5 +21,4 @@ public class DemoServlet_forward_redirect extends HttpServlet {
     }
 
 
-
 }

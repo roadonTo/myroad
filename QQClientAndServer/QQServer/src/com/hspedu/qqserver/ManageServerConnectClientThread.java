@@ -10,19 +10,19 @@ public class ManageServerConnectClientThread {
 
     private static HashMap<String, ServerConnectClientThread> hm = new HashMap<>();
 
-    public static void addServerConnectClientThread(String userId, ServerConnectClientThread serverConnectClientThread){
+    public static void addServerConnectClientThread(String userId, ServerConnectClientThread serverConnectClientThread) {
         hm.put(userId, serverConnectClientThread);
     }
 
-    public static ServerConnectClientThread getServerConnectClientThread(String userId){
+    public static ServerConnectClientThread getServerConnectClientThread(String userId) {
         return hm.get(userId);
     }
 
     //判断HashMap集合中 是否含有 UserId
-    public static boolean judgeUserId(String str){
+    public static boolean judgeUserId(String str) {
         Iterator<String> iterator = hm.keySet().iterator();
-        while(iterator.hasNext()){
-            if (str.equals(iterator.next())){
+        while (iterator.hasNext()) {
+            if (str.equals(iterator.next())) {
                 return true;
             }
 
@@ -31,14 +31,13 @@ public class ManageServerConnectClientThread {
     }
 
 
-
     /*
     获取在线用户列表
      */
-    public static String getUserId(){
+    public static String getUserId() {
         Iterator<String> iterator = hm.keySet().iterator();
         String str = "";
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             str += iterator.next() + ",";
         }
         return str;
@@ -48,11 +47,9 @@ public class ManageServerConnectClientThread {
     /*
     用户退出，移除掉对应线程
      */
-    public static void remove(String userId){
+    public static void remove(String userId) {
         hm.remove(userId);
     }
-
-
 
 
 }

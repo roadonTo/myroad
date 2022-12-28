@@ -14,6 +14,6 @@
     <context:component-scan base-package="road"></context:component-scan>
 
     <!--开启基于注解的AOP-->
-    <aop:aspectj-autoproxy />
+    <aop:aspectj-autoproxy/>
 
 </beans>

@@ -29,7 +29,7 @@ public class UserClientService {
         user.setPwd(pwd);
         try {
             //连接到服务器，发送user对象
-            socket = new Socket(InetAddress.getLocalHost(),9999);
+            socket = new Socket(InetAddress.getLocalHost(), 9999);
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
             oos.writeObject(user);
 
@@ -37,14 +37,14 @@ public class UserClientService {
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
             Message msg = (Message) ois.readObject();
 
-            if (msg.getMsgType().equals(MessageType.MESSAGE_LOGIN_SUCCESS)){ //登录成功
+            if (msg.getMsgType().equals(MessageType.MESSAGE_LOGIN_SUCCESS)) { //登录成功
                 //创建一个和服务器端保持通信的线程，把socket放入线程中
                 //这里我们用一个线程类 ClientConnectServerThread
                 ClientConnectServerThread cCst = new ClientConnectServerThread(socket);
                 //启动线程
                 cCst.start();
                 //为了客户端以后的扩展，把线程放入一个集合中，统一管理 ManageClientConnectServerThread
-                ManageClientConnectServerThread.addCcst(name,cCst);
+                ManageClientConnectServerThread.addCcst(name, cCst);
                 p = true;
             } else {
                 //如果登录失败，就不用开启线程， 关闭socket
@@ -60,7 +60,7 @@ public class UserClientService {
     /*
     拉取在线用户信息
      */
-    public void getOnlineUsers(){
+    public void getOnlineUsers() {
         //发送一条信息给服务端，表示我要拉取在线用户信息
         Message message = new Message();
         message.setMsgType(MessageType.MESSAGE_ONLINE_FRIEND);
@@ -81,7 +81,7 @@ public class UserClientService {
     /*
     退出系统
      */
-    public  void exit(){
+    public void exit() {
         Message message = new Message();
         message.setSender(user.getName());
         message.setMsgType(MessageType.MESSAGE_EXIT);
@@ -98,7 +98,7 @@ public class UserClientService {
     /*
     发送文本消息
      */
-    public void sendMessage(String userId, String content){
+    public void sendMessage(String userId, String content) {
         //构建Message对象
         Message message = new Message();
         message.setMsgType(MessageType.MESSAGE_COMMON);
@@ -114,8 +114,6 @@ public class UserClientService {
         }
 
     }
-
-
 
 
 }

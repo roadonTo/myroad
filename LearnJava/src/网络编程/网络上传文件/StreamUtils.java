@@ -11,8 +11,8 @@ public class StreamUtils {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         byte[] bytes = new byte[1024];
         int len = 0;
-        while ((len = is.read(bytes)) != -1){
-            bos.write(bytes,0,len);
+        while ((len = is.read(bytes)) != -1) {
+            bos.write(bytes, 0, len);
         }
         byte[] byteArray = bos.toByteArray();
         bos.close();//返回之前需要先关闭流
@@ -27,7 +27,7 @@ public class StreamUtils {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
         StringBuilder builder = new StringBuilder();
         String str;
-        while ((str = bufferedReader.readLine()) != null){
+        while ((str = bufferedReader.readLine()) != null) {
             builder.append(str + "\r\n");
         }
         String s = builder.toString();

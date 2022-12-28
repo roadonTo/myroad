@@ -12,6 +12,6 @@ public class Demo01Servlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("demo01 service.....");
-        request.getRequestDispatcher("succ.html").forward(request,response);
+        request.getRequestDispatcher("succ.html").forward(request, response);
     }
 }

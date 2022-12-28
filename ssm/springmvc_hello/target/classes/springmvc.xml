@@ -20,7 +20,7 @@
                         <!-- 视图后缀 -->
                         <property name="suffix" value=".html"/>
                         <property name="templateMode" value="HTML5"/>
-                        <property name="characterEncoding" value="UTF-8" />
+                        <property name="characterEncoding" value="UTF-8"/>
                     </bean>
                 </property>
             </bean>

@@ -34,7 +34,8 @@
     <a th:if="${page.hasPreviousPage}" th:href="@{/employee/page/1}">首页</a>
     <a th:if="${page.hasPreviousPage}" th:href="@{'/employee/page/'+${page.prePage}}">上一页</a>
     <span th:each="num : ${page.navigatepageNums}">
-        <a th:if="${page.pageNum == num}" style="color: red;" th:href="@{'/employee/page/'+${num}}" th:text="'['+${num}+']'"></a>
+        <a th:if="${page.pageNum == num}" style="color: red;" th:href="@{'/employee/page/'+${num}}"
+           th:text="'['+${num}+']'"></a>
         <a th:if="${page.pageNum != num}" th:href="@{'/employee/page/'+${num}}" th:text="${num}"></a>
     </span>
     <a th:if="${page.hasNextPage}" th:href="@{'/employee/page/'+${page.nextPage}}">下一页</a>

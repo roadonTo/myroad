@@ -27,7 +27,7 @@ public class ObjectInputStream_ {
 
         // 1.如果我们希望调用Dog的方法，需要向下转型
         // 2.需要我们将Dog类的定义，放到可以引用的位置
-        Dog dog1 = (Dog)dog;
+        Dog dog1 = (Dog) dog;
         System.out.println(dog1.getName());
 
         ois.close();

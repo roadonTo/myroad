@@ -17,17 +17,17 @@ public class MathDemo {
         System.out.println("--------");
 
         //public static int max​(int a,int b)：返回两个int值中的较大值
-        System.out.println(Math.max(66,88));
+        System.out.println(Math.max(66, 88));
         System.out.println("--------");
 
         //public static int min​(int a,int b)：返回两个int值中的较小值(自学)
 
         //public static double pow​(double a,double b)：返回a的b次幂的值
-        System.out.println(Math.pow(2.0,3.0));
+        System.out.println(Math.pow(2.0, 3.0));
         System.out.println("--------");
 
         //public static double random​()：返回值为double的正值，[0.0,1.0)
 //        System.out.println(Math.random());
-        System.out.println((int)(Math.random()*100) + 1);
+        System.out.println((int) (Math.random() * 100) + 1);
     }
 }

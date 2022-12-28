@@ -1,7 +1,7 @@
 package road.myssm.myspringmvc;
 
 public class DispatcherServletException extends RuntimeException {
-    public DispatcherServletException(String msg){
+    public DispatcherServletException(String msg) {
         super(msg);
     }
 }

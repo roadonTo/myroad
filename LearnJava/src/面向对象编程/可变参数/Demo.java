@@ -12,11 +12,11 @@ public class Demo {
 }
 
 // 测试可变参数的使用
-class DD{
-    public int kbcs(int... m){
+class DD {
+    public int kbcs(int... m) {
         int sum = 0;
         for (int i = 0; i < m.length; i++) {
-            sum+= m[i];
+            sum += m[i];
         }
         return sum;
     }

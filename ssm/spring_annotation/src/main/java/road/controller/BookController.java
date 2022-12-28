@@ -10,7 +10,7 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    public void buyBook(Integer userId, Integer bookId){
+    public void buyBook(Integer userId, Integer bookId) {
         bookService.buyBook(userId, bookId);
     }
 

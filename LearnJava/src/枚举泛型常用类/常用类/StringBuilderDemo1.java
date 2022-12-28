@@ -37,7 +37,6 @@ public class StringBuilderDemo1 {
         System.out.println("sb:" + sb);
 
 
-
         //StringBuilder 转换为 String
         StringBuilder sb1 = new StringBuilder();
         sb1.append("hello");

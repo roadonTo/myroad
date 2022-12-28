@@ -9,9 +9,8 @@ import java.sql.SQLException;
  * 1.添加jar包
  * 2.加载驱动
  * 3.通过驱动管理器获取连接对象（准备url,用户名，密码）
- *
- *  Demo02,03,04,05分别是 增删改查的示例
- *
+ * <p>
+ * Demo02,03,04,05分别是 增删改查的示例
  */
 public class Demo01 {
 

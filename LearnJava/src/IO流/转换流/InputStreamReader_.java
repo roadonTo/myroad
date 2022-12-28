@@ -20,7 +20,7 @@ public class InputStreamReader_ {
         InputStreamReader isr = new InputStreamReader(new FileInputStream(filePath), charset);
         BufferedReader br = new BufferedReader(isr);
 
-        while((s = br.readLine()) != null){
+        while ((s = br.readLine()) != null) {
             System.out.println(s);
         }
 

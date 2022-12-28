@@ -12,7 +12,7 @@
 
 <configuration>
     <properties resource="jdbc.properties"/>
-    
+
     <settings>
         <!--解决字段名和属性名不一致问题-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>

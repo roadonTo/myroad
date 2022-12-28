@@ -23,12 +23,12 @@ import java.util.Set;
 public class MapDemo {
     public static void main(String[] args) {
         //创建集合对象
-        Map<String,String> map = new HashMap<String,String>();
+        Map<String, String> map = new HashMap<String, String>();
 
         //V put(K key,V value)：添加元素
-        map.put("张无忌","赵敏");
-        map.put("郭靖","黄蓉");
-        map.put("杨过","小龙女");
+        map.put("张无忌", "赵敏");
+        map.put("郭靖", "黄蓉");
+        map.put("杨过", "小龙女");
 
         //V remove(Object key)：根据键删除键值对元素
 //        System.out.println(map.remove("郭靖"));

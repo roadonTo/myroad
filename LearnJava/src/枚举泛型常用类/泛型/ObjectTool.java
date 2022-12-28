@@ -3,6 +3,7 @@ package 枚举泛型常用类.泛型;
 /**
  * 泛型的使用
  * 泛型类和泛型方法
+ *
  * @param <T>
  */
 public class ObjectTool<T> { //泛型类

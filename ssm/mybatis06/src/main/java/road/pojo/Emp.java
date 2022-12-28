@@ -46,7 +46,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.emp_id
      *
      * @return the value of t_emp.emp_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public Integer getEmpId() {
@@ -58,7 +57,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.emp_id
      *
      * @param empId the value for t_emp.emp_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setEmpId(Integer empId) {
@@ -70,7 +68,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.emp_name
      *
      * @return the value of t_emp.emp_name
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public String getEmpName() {
@@ -82,7 +79,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.emp_name
      *
      * @param empName the value for t_emp.emp_name
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setEmpName(String empName) {
@@ -94,7 +90,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.age
      *
      * @return the value of t_emp.age
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public Integer getAge() {
@@ -106,7 +101,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.age
      *
      * @param age the value for t_emp.age
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setAge(Integer age) {
@@ -118,7 +112,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.gender
      *
      * @return the value of t_emp.gender
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public String getGender() {
@@ -130,7 +123,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.gender
      *
      * @param gender the value for t_emp.gender
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setGender(String gender) {
@@ -142,7 +134,6 @@ public class Emp {
      * This method returns the value of the database column t_emp.dept_id
      *
      * @return the value of t_emp.dept_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public Integer getDeptId() {
@@ -154,7 +145,6 @@ public class Emp {
      * This method sets the value of the database column t_emp.dept_id
      *
      * @param deptId the value for t_emp.dept_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setDeptId(Integer deptId) {

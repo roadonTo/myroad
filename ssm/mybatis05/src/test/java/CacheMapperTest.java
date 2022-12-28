@@ -21,7 +21,7 @@ public class CacheMapperTest {
      * 2) 同一个SqlSession但是查询条件不同
      * 3) 同一个SqlSession两次查询期间执行了任何一次增删改操作
      * 4) 同一个SqlSession两次查询期间手动清空了缓存
-     *
+     * <p>
      * MyBatis的二级缓存：
      * MyBatis的二级缓存是SqlSessionFactory级别的，即通过同一个SqlSessionFactory所获取的SqlSession对象
      * 查询的数据会被缓存，在通过同一个SqlSessionFactory所获取的SqlSession查询相同的数据会从缓存中获取
@@ -52,7 +52,7 @@ public class CacheMapperTest {
     }
 
     @Test
-    public void testGetEmpById(){
+    public void testGetEmpById() {
         SqlSession sqlSession1 = SqlSessionUtil.getSqlSession();
         CacheMapper mapper1 = sqlSession1.getMapper(CacheMapper.class);
         Emp emp1 = mapper1.getEmpById(1);
@@ -66,7 +66,6 @@ public class CacheMapperTest {
         Emp emp3 = mapper2.getEmpById(1);
         System.out.println(emp3);*/
     }
-
 
 
 }

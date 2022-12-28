@@ -6,7 +6,7 @@ public class Animal {
     public String color = "黑";
     public int age = 18;
 
-    public void eat(){
+    public void eat() {
         System.out.println("动物吃东西");
     }
 

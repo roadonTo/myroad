@@ -30,7 +30,7 @@ public class IntegerDemo2 {
 
         //定义一个int数组，把 String[] 数组中的每一个元素存储到 int 数组中
         int[] arr = new int[strArray.length];
-        for(int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(strArray[i]);
         }
 
@@ -39,8 +39,8 @@ public class IntegerDemo2 {
 
         //把排序后的int数组中的元素进行拼接得到一个字符串，这里拼接采用StringBuilder来实现
         StringBuilder sb = new StringBuilder();
-        for(int i=0; i<arr.length; i++) {
-            if(i == arr.length - 1) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
                 sb.append(arr[i]);
             } else {
                 sb.append(arr[i]).append(" ");

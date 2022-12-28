@@ -15,8 +15,10 @@
         <aop:aspect ref="loggerAspect">
             <aop:before method="beforeAdviceMethod" pointcut-ref="pointCut"></aop:before>
             <aop:after method="afterAdviceMethod" pointcut-ref="pointCut"></aop:after>
-            <aop:after-returning method="afterReturningAdviceMethod" returning="result" pointcut-ref="pointCut"></aop:after-returning>
-            <aop:after-throwing method="afterThrowingAdviceMethod" throwing="ex" pointcut-ref="pointCut"></aop:after-throwing>
+            <aop:after-returning method="afterReturningAdviceMethod" returning="result"
+                                 pointcut-ref="pointCut"></aop:after-returning>
+            <aop:after-throwing method="afterThrowingAdviceMethod" throwing="ex"
+                                pointcut-ref="pointCut"></aop:after-throwing>
             <aop:around method="aroundAdviceMethod" pointcut-ref="pointCut"></aop:around>
         </aop:aspect>
         <aop:aspect ref="validateAspect" order="1">

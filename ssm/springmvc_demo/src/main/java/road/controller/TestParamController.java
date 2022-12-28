@@ -16,26 +16,28 @@ public class TestParamController {
 
     /**
      * 1. 通过servlet中的 HttpServletRequest来接收请求中的参数
+     *
      * @param request
      * @return
      */
     @RequestMapping("/test/servletAPI")
-    public String servletAPI(HttpServletRequest request){
+    public String servletAPI(HttpServletRequest request) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        System.out.println( "username:" + username + ",password:" + password);
+        System.out.println("username:" + username + ",password:" + password);
         return "success";
     }
 
 
     /**
      * 2. SpringMVC自带的效果，形参名与请求参数名一致就行
+     *
      * @param username
      * @param password
      * @return
      */
     @RequestMapping("/param1")
-    public String getParam(String username, String password){
+    public String getParam(String username, String password) {
         System.out.println("username:" + username + ",password:" + password);
         return "success";
     }
@@ -48,7 +50,6 @@ public class TestParamController {
      * required 默认为true 表示必须得传这个参数过来，否则报错
      * defaultValue 当 required = false且又没有传参数过来时，  可以给这个形参设置一个默认值
      *
-     *
      * @param name
      * @param pwd
      * @return
@@ -56,14 +57,15 @@ public class TestParamController {
     @RequestMapping("/param2")
     public String getParam2(
             @RequestParam(value = "username", required = false, defaultValue = "hello") String name,
-            @RequestParam("password") String pwd){
+            @RequestParam("password") String pwd) {
         System.out.println("username:" + name + ",password:" + pwd);
         return "success";
     }
 
 
     /**
-     *可以指定获取请求头中的信息，和 cookie中的信息
+     * 可以指定获取请求头中的信息，和 cookie中的信息
+     *
      * @param referer
      * @param jsessionid
      * @return
@@ -71,20 +73,21 @@ public class TestParamController {
     @RequestMapping("/getRequestHeaderAndCookie")
     public String getRequestHeaderAndCookie(
             @RequestHeader("referer") String referer,
-            @CookieValue("JSESSIONID") String jsessionid){
-        System.out.println("referer:" + referer );
-        System.out.println("jsessionid:" + jsessionid );
+            @CookieValue("JSESSIONID") String jsessionid) {
+        System.out.println("referer:" + referer);
+        System.out.println("jsessionid:" + jsessionid);
         return "success";
     }
 
     /**
      * 4. 通过实体类型 来获取请求参数
      * 不用加任何注解，但需要实体类中的属性名与参数名一致
+     *
      * @param user
      * @return
      */
     @RequestMapping("/param3")
-    public String getParam3(User user){
+    public String getParam3(User user) {
         System.out.println(user);
         return "success";
     }

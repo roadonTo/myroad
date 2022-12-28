@@ -22,7 +22,7 @@
                         <!-- 视图后缀 -->
                         <property name="suffix" value=".html"/>
                         <property name="templateMode" value="HTML5"/>
-                        <property name="characterEncoding" value="UTF-8" />
+                        <property name="characterEncoding" value="UTF-8"/>
                     </bean>
                 </property>
             </bean>
@@ -39,17 +39,16 @@
         浏览器发送的请求会先被DispatcherServlet处理，无法处理在交给DefaultServlet处理
     -->
     <!--使用tomcat默认配置 处理静态资源-->
-    <mvc:default-servlet-handler />
+    <mvc:default-servlet-handler/>
 
     <!--开启mvc的注解驱动-->
-    <mvc:annotation-driven />
+    <mvc:annotation-driven/>
 
     <!--视图控制器，为当前的请求直接设置视图名称实现页面跳转
     若不设置<mvc:annotation-driven /> 的话，
     则只有视图控制器所设置的请求会被处理，其他的请求将全部404
     -->
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
-
 
 
     <!--配置文件上传解析器-->

@@ -21,7 +21,7 @@ public class ContextLoaderListener implements ServletContextListener {
         //3.创建IOC容器
         BeanFactory beanFactory = new ClassPathXmlApplicationContext(path);
         //4.将IOC容器保存到application作用域
-        application.setAttribute("beanFactory",beanFactory);
+        application.setAttribute("beanFactory", beanFactory);
     }
 
     @Override

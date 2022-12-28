@@ -1,57 +1,156 @@
-<%=request.getContextPath() %><%=request.getContextPath() %>@charset "UTF-8";
+<
+%
+=
+request.
+
+getContextPath
+(
+)
+%
+> <
+
+%
+=
+request.
+
+getContextPath
+(
+)
+%
+>
+
+@charset "UTF-8";
 /* CSS Document */
 body, h1, h2, h3, h4, h5, h6, hr, p,
-blockquote, /* structural elements ½á¹¹ÔªËØ */
-dl, dt, dd, ul, ol, li, /* list elements ÁÐ±íÔªËØ */
-pre, /* text formatting elements ÎÄ±¾¸ñÊ½ÔªËØ */
-form, fieldset, legend, button, input, textarea, /* form elements ±íµ¥ÔªËØ */
-th, td, /* table elements ±í¸ñÔªËØ */
-body{
-background: #F5F5F5;
+blockquote, /* structural elements ï¿½á¹¹Ôªï¿½ï¿½ */
+dl, dt, dd, ul, ol, li, /* list elements ï¿½Ð±ï¿½Ôªï¿½ï¿½ */
+pre, /* text formatting elements ï¿½Ä±ï¿½ï¿½ï¿½Ê½Ôªï¿½ï¿½ */
+form, fieldset, legend, button, input, textarea, /* form elements ï¿½ï¿½Ôªï¿½ï¿½ */
+th, td, /* table elements ï¿½ï¿½ï¿½Ôªï¿½ï¿½ */
+body {
+    background: #F5F5F5;
 }
-form{
-	margin-top: 0px;
+
+form {
+    margin-top: 0px;
 }
-img{border:medium none;margin:0;padding:0;}/* img elements Í¼Æ¬ÔªËØ */
-/** ÉèÖÃÄ¬ÈÏ×ÖÌå **/
-body,button, input, select, textarea { font-size:12px; font: 12px/1.5 ¡¯ËÎÌå¡¯,Arial,tahoma, Srial, helvetica, sans-serif;}
-h1,h2,h3,h4,h5,h6 { font-size:100%;}
-em{font-style:normal;}
-/** ÖØÖÃÁÐ±íÔªËØ **/
-ul, ol { list-style:none; }
-/** ÖØÖÃ³¬Á´½ÓÔªËØ **/
-a { text-decoration:none; color:#4f4f4f;}
-a:hover { text-decoration:underline; color:#F40; }
-/** ÖØÖÃÍ¼Æ¬ÔªËØ **/
-img{ border:0px; margin-bottom: -7px;}
-table {border: 1px solid #B1CDE3; padding:0; margin:0 auto; margin-left:10px;margin-right:10px; width:98%; border-collapse: collapse; }
-td,th {text-align:center; border: 1px solid #B1CDE3;background: #fff;font-size:14px;padding: 3px 3px 3px 8px;color: #4f6b72;height: 22px;}
-input[type="text"]{
-border: 1px solid; border-color: #CCC #EEE #EEE #CCC;
-background: #F5F5F5;
-height: 18px;
-width: 160px;
+
+img {
+    border: medium none;
+    margin: 0;
+    padding: 0;
 }
-input[type="password"]{
-border: 1px solid; border-color: #CCC #EEE #EEE #CCC;
-color: #000; background: #F5F5F5;
-width: 160px;
+
+/* img elements Í¼Æ¬Ôªï¿½ï¿½ */
+/** ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ **/
+body, button, input, select, textarea {
+    font-size: 12px;
+    font: 12px/1.5 ï¿½ï¿½ï¿½ï¿½ï¿½å¡¯, Arial, tahoma, Srial, helvetica, sans-serif;
 }
-input[type="submit"]{
-border: 1px solid; border-color: #EEE #CCC #CCC #EEE;
-color: #000; font-weight: bold; background: #F5F5F5;
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
 }
-input[type="button"]{
-border: 1px solid; border-color: #EEE #CCC #CCC #EEE;
-color: #000; font-weight: bold; background: #F5F5F5;
+
+em {
+    font-style: normal;
 }
-input[type="reset"]{
-border: 1px solid; border-color: #EEE #CCC #CCC #EEE;
-color: #000; background: #F5F5F5;
+
+/** ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½Ôªï¿½ï¿½ **/
+ul, ol {
+    list-style: none;
 }
+
+/** ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ **/
+a {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F40;
+}
+
+/** ï¿½ï¿½ï¿½ï¿½Í¼Æ¬Ôªï¿½ï¿½ **/
+img {
+    border: 0px;
+    margin-bottom: -7px;
+}
+
+table {
+    border: 1px solid #B1CDE3;
+    padding: 0;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 98%;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid #B1CDE3;
+    background: #fff;
+    font-size: 14px;
+    padding: 3px 3px 3px 8px;
+    color: #4f6b72;
+    height: 22px;
+}
+
+input[type="text"] {
+    border: 1px solid;
+    border-color: #CCC #EEE #EEE #CCC;
+    background: #F5F5F5;
+    height: 18px;
+    width: 160px;
+}
+
+input[type="password"] {
+    border: 1px solid;
+    border-color: #CCC #EEE #EEE #CCC;
+    color: #000;
+    background: #F5F5F5;
+    width: 160px;
+}
+
+input[type="submit"] {
+    border: 1px solid;
+    border-color: #EEE #CCC #CCC #EEE;
+    color: #000;
+    font-weight: bold;
+    background: #F5F5F5;
+}
+
+input[type="button"] {
+    border: 1px solid;
+    border-color: #EEE #CCC #CCC #EEE;
+    color: #000;
+    font-weight: bold;
+    background: #F5F5F5;
+}
+
+input[type="reset"] {
+    border: 1px solid;
+    border-color: #EEE #CCC #CCC #EEE;
+    color: #000;
+    background: #F5F5F5;
+}
+
 textarea {
-border: 1px solid; border-color: #EEE #CCC #CCC #EEE;
-color: #000; background: #F5F5F5;
-width:600px;height: 150px;
+    border: 1px solid;
+    border-color: #EEE #CCC #CCC #EEE;
+    color: #000;
+    background: #F5F5F5;
+    width: 600px;
+    height: 150px;
 }
-p{margin-left:10px; margin-top:2px; margin-bottom:5px; width:100%; border-collapse: collapse;font-size:14px;}
+
+p {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}

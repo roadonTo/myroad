@@ -42,7 +42,7 @@ interface Bell { //铃声接口
 
 
 class Cellphone {
-    public void alarmClock(Bell bell){
+    public void alarmClock(Bell bell) {
         bell.ring();
     }
 }

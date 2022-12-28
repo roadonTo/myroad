@@ -17,9 +17,9 @@ public class Properties2 {
         String name = properties.getProperty("name");
         System.out.println("name的值为：" + name);
         //4. 修改值  设置的意思包含着 如果没有这个键就添加，如果有这个键就修改
-        properties.setProperty("name","工藤新一");
+        properties.setProperty("name", "工藤新一");
 
-        properties.store(new FileOutputStream(path),null);
+        properties.store(new FileOutputStream(path), null);
 
     }
 }

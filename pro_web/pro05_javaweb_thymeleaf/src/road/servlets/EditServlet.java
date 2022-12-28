@@ -19,9 +19,9 @@ public class EditServlet extends ViewBaseServlet {
 
         FruitDAO fruitDao = new FruitDAOImpl();
         Fruit fruit = fruitDao.getFruitByFid(fid);
-        req.setAttribute("fruit",fruit);
+        req.setAttribute("fruit", fruit);
 
-        super.processTemplate("edit",req,resp);
+        super.processTemplate("edit", req, resp);
 
     }
 }

@@ -9,7 +9,7 @@ public class TestScopeAndLifeCycle {
      * 测试 bean的作用域: scope=prototype 多例， 默认是scope=singleton
      */
     @Test
-    public void test1(){
+    public void test1() {
         ClassPathXmlApplicationContext contextFactory = new ClassPathXmlApplicationContext("applicationContext.xml");
         User user1 = contextFactory.getBean("user", User.class);
         User user2 = contextFactory.getBean("user", User.class);
@@ -22,11 +22,9 @@ public class TestScopeAndLifeCycle {
      * 分四步：实例化，依赖注入，初始化，销毁
      * （单例情况下） 前三步 在获取ioc容器的时候 就执行了  ClassPathXmlApplicationContext contextFactory = new ClassPathXmlApplicationContext("applicationContext.xml");
      * （多例情况下） 是在获取bean对象的时候 才执行依赖注入，初始化    User user1 = contextFactory.getBean("user1", User.class);
-     *
-     *
      */
     @Test
-    public void test2(){
+    public void test2() {
         ClassPathXmlApplicationContext contextFactory = new ClassPathXmlApplicationContext("applicationContext.xml");
         User user1 = contextFactory.getBean("user1", User.class);
         System.out.println(user1);

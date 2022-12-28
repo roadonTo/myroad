@@ -21,7 +21,7 @@ public class BufferedCopy2 {
         try {
             bis = new BufferedInputStream(new FileInputStream(srcFilePath));
             bos = new BufferedOutputStream(new FileOutputStream(destFilePath));
-            while ((len = bis.read(bytes)) != -1){
+            while ((len = bis.read(bytes)) != -1) {
 //                bos.write(bytes,0,len);
                 bos.write(bytes);
             }
@@ -30,10 +30,10 @@ public class BufferedCopy2 {
             e.printStackTrace();
         } finally {
             try {
-                if (bis == null){
+                if (bis == null) {
                     bis.close();
                 }
-                if (bos == null){
+                if (bos == null) {
                     bos.close();
                 }
             } catch (IOException e) {

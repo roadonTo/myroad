@@ -20,7 +20,7 @@ public class InnerClassExercise01 {
     }
 
     //静态方法；形参是接口类型
-    public static void f1(IL il){
+    public static void f1(IL il) {
         il.show();
     }
 }

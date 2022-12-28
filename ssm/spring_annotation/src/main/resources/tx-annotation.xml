@@ -25,8 +25,7 @@
     <context:component-scan base-package="road"></context:component-scan>
 
 
-
-<!--****配置 声明式事务 的两个步骤，然后在代码（serviceImpl）的方法或类上 加上@transactional  就已经配置好 不用管了********-->
+    <!--****配置 声明式事务 的两个步骤，然后在代码（serviceImpl）的方法或类上 加上@transactional  就已经配置好 不用管了********-->
 
     <!--1. 配置事务管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
@@ -34,12 +33,7 @@
     </bean>
 
     <!--2. 开启事务的注解驱动-->
-    <tx:annotation-driven transaction-manager="transactionManager" />
-
-
-
-
-
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
 </beans>

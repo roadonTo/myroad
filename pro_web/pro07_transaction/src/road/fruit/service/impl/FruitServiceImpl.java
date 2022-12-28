@@ -9,12 +9,12 @@ import java.util.List;
 
 public class FruitServiceImpl implements FruitService {
 
-    private FruitDAO fruitDAO = null ;
+    private FruitDAO fruitDAO = null;
 
     @Override
     public List<Fruit> getFruitList(String keyword, Integer pageNo) {
         System.out.println("getFruitList -> " + ConnUtil.getConn());
-        return fruitDAO.getFruitList(keyword,pageNo);
+        return fruitDAO.getFruitList(keyword, pageNo);
     }
 
     @Override
@@ -39,7 +39,7 @@ public class FruitServiceImpl implements FruitService {
     public Integer getPageCount(String keyword) {
         System.out.println("getPageCount -> " + ConnUtil.getConn());
         int count = fruitDAO.getFruitCount(keyword);
-        int pageCount = (count+5-1)/5 ;
+        int pageCount = (count + 5 - 1) / 5;
         return pageCount;
     }
 

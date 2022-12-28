@@ -22,7 +22,6 @@ public class Dept {
      * This method returns the value of the database column t_dept.dept_id
      *
      * @return the value of t_dept.dept_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public Integer getDeptId() {
@@ -34,7 +33,6 @@ public class Dept {
      * This method sets the value of the database column t_dept.dept_id
      *
      * @param deptId the value for t_dept.dept_id
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setDeptId(Integer deptId) {
@@ -46,7 +44,6 @@ public class Dept {
      * This method returns the value of the database column t_dept.dept_name
      *
      * @return the value of t_dept.dept_name
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public String getDeptName() {
@@ -58,7 +55,6 @@ public class Dept {
      * This method sets the value of the database column t_dept.dept_name
      *
      * @param deptName the value for t_dept.dept_name
-     *
      * @mbggenerated Sat Dec 10 20:29:13 CST 2022
      */
     public void setDeptName(String deptName) {

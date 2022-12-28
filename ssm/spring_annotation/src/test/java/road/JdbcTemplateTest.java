@@ -22,14 +22,14 @@ public class JdbcTemplateTest {
      * jdbcTemplate增删改
      */
     @Test
-    public void testUpdate(){
+    public void testUpdate() {
         String sql = "insert into user values(null, ?,?,?,?,?)";
-        jdbcTemplate.update(sql,"nuonuo","123",20,"女","123@qq.cjom");
+        jdbcTemplate.update(sql, "nuonuo", "123", 20, "女", "123@qq.cjom");
 
     }
 
     @Test
-    public void testQueryUser(){
+    public void testQueryUser() {
         String sql = "select * from user where id = ?";
         User user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), 1);
         System.out.println(user);
@@ -37,21 +37,19 @@ public class JdbcTemplateTest {
     }
 
     @Test
-    public void testQueryAllUser(){
+    public void testQueryAllUser() {
         String sql = "select * from user";
         List<User> userList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(User.class));
         userList.forEach(System.out::println);
     }
 
     @Test
-    public void testQueryCount(){
+    public void testQueryCount() {
         String sql = "select count(*) from user";
         Integer integer = jdbcTemplate.queryForObject(sql, Integer.class);
         System.out.println(integer);
 
     }
-
-
 
 
 }

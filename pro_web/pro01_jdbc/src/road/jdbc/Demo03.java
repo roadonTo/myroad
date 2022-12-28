@@ -16,9 +16,9 @@ public class Demo03 {
 
         String sql = "update fruit set fname=? ,remark=? where fid=?";
         PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setString(1,fruit.getFname());
-        statement.setString(2,fruit.getRemark());
-        statement.setInt(3,fruit.getFid());
+        statement.setString(1, fruit.getFname());
+        statement.setString(2, fruit.getRemark());
+        statement.setInt(3, fruit.getFid());
 
         int i = statement.executeUpdate();
         System.out.println(i > 0 ? "修改成功" : "修改失败");
