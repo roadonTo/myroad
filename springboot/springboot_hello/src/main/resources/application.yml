@@ -1,0 +1,10 @@
+#SpringBoot整合mybatis相关配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot?charcterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml  #mapper映射文件路径
+  type-aliases-package: com.road.domain  #配置哪个包下的类有默认的别名

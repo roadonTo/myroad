@@ -1,9 +1,11 @@
 package road.mapper;
 
+import org.springframework.stereotype.Repository;
 import road.pojo.Employee;
 
 import java.util.List;
 
+@Repository
 public interface EmployeeMapper {
 
     /**

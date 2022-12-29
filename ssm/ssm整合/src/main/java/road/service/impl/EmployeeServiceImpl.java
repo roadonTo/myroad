@@ -1,5 +1,6 @@
 package road.service.impl;
 
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,9 @@ import java.util.List;
 @Service
 @Transactional
 public class EmployeeServiceImpl implements EmployeeService {
+
     @Autowired
     private EmployeeMapper employeeMapper;
-
 
     public List<Employee> getAllEmployee() {
         return employeeMapper.getAllEmployee();
