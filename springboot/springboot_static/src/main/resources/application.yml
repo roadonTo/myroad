@@ -1,0 +1,12 @@
+#spring:
+#  mvc:
+#    # 指定静态资源访问路径 这里是指定必须以/res开头，（默认是/**）
+#    static-path-pattern: /res/**
+#  web:
+#    resources:
+#      # 指定静态资源存放路径
+#      static-locations:
+#        - classpath:/roadstatic/
+#        - classpath:/static/
+server:
+  port: 8081
